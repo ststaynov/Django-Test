@@ -1,0 +1,15 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'grades/style.css' %}" />
+{% if latest_resort_list %}
+    <ul>
+    {% for resort in latest_resort_list %}
+        <li><a href="/grades/{{ resort.id }}/">{{ resort.resortname_text }}</a></li>
+        {% for grade in latest_grade_list %}
+            <li>{{ grade }}</li>
+        {% endfor %}
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Resorts are available.</p>
+{% endif %}
