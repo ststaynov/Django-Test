@@ -1,15 +1,83 @@
-{% load staticfiles %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'grades/style.css' %}" />
-{% if latest_resort_list %}
-    <ul>
-    {% for resort in latest_resort_list %}
-        <li><a href="/grades/{{ resort.id }}/">{{ resort.resortname_text }}</a></li>
-        {% for grade in latest_grade_list %}
-            <li>{{ grade }}</li>
+<!doctype html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>skigrade.me by ststaynov</title> 
+    <link rel="stylesheet" type="text/css" href="{% static 'grades/style.css' %}" />
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header style="display:none;">
+        <img src="images/icon-skigrade.png" alt="logo-skigrade">
+        <a href="http://www.skigrade.me/" class="icon-skigrade"><strong>Stoyan Staynov’s</strong> Web site</a>
+      </header>
+      <nav>
+    {% if latest_resort_list %}
+        {% for resort in latest_resort_list %}
+            <h1 class="navigation">{{ resort.resortname_text }}</h1>
         {% endfor %}
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No Resorts are available.</p>
-{% endif %}
+    {% endif %}
+      </nav>
+        <div class="vote">
+          <small><p class="header">vote</p></small>
+        </div>
+      <section>
+        <div class="box_items">
+          <div id="weather" class="box">
+            <h1 class="grade">6.3 /</h1><h3>10</h3>
+            <h2>weather</h2>
+            <img src="{% static 'grades/images/sun.svg'%}" alt="icon-weather">
+          </div>        
+          <div id="grade" class="box">
+            <h1 class="grade">6.3 /</h1><h3>10</h3>
+            <h2>snow</h2>
+            <img src="{% static 'grades/images/snowflake.svg'%}" alt="icon-snowflake">
+          </div>
+          <div id="parking" class="box">
+            <h1 class="grade">6.3 /</h1><h3>10</h3>
+            <h2>parking <br> spaces</h2>
+            <img src="{% static 'grades/images/parking.svg'%}" alt="icon-parking">
+          </div>
+          <div id="lift" class="box">
+            <h1 class="grade">6.3 /</h1><h3>13</h3>
+            <h2>working <br> lifts</h2>
+            <img src="{% static 'grades/images/lift.svg'%}" alt="icon-lift">
+          </div>
+          <div id="wait_line" class="box">
+            <h1 class="grade">6.3 /</h1> <h3>10</h3>
+            <h2>waiting <br> lines</h2>
+            <img src="{% static 'grades/images/time.svg'%}" alt="icon-lines">
+          </div>
+          <div id="road_condition" class="box">
+            <h1 class="grade">6.3 /</h1><h3>10</h3>
+            <h2>road <br> conditions</h2>
+            <img src="{% static 'grades/images/road.svg'%}" alt="icon-road">
+          </div>
+        </div>
+        <div class="daily_infografic">
+          <ul>
+            <li class="chart"><h3>Tomorrow</h3><img src="{% static 'grades/images/pie_chart.png'%}" alt=""></li>
+            <li class="chart"><h3>12.05</h3><img src="{% static 'grades/images/pie_chart.png'%}" alt=""></li>
+            <li class="chart" ><h3>12.05.2015</h3><img src="{% static 'grades/images/pie_chart.png'%}" alt=""></li>
+          </ul>
+        </div>
+
+      </section>
+      <section class="about">
+        <p>BIG LOGO <code>float left</code></p><p>Who we are?<i>float right</i></p>
+      </section>
+      <footer>
+        <p><small>Made with <a href="https://en.wikipedia.org/wiki/Love">love</a> for .</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>

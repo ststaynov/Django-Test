@@ -1,3 +1,352 @@
-li a {
-    background-color: pink;
+/* MeyerWeb Reset */
+html {height: 100%;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* Base text styles */
+
+body {
+  padding:10px 0 0 0;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	background-color: #FFF;
+	margin: 0;
+	line-height: 1.8em;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#000;
+  margin:36px 0 10px;
+}
+
+p, ul, ol, table, dl {
+  margin:0 0 22px;
+}
+
+h1, h2, h3 {
+  line-height:1.3;
+	font-weight: normal;
+}
+
+h1,h2, h3 {
+	display: block;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4, h5, h6 {
+	font-weight: 700;
+}
+
+a {
+  color:#C30000;
+  font-weight:200;
+  text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a small {
+	font-size: 12px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+  font-weight:700;
+}
+
+ul {
+  list-style-position: inside;
+  list-style: disc;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 25px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+dl, dt, dd, dl p {
+	font-color: #444;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+hr {
+  border:0;
+  background:#ccc;
+  height:1px;
+  margin:0 0 24px;
+}
+
+/* Images */
+
+img {
+  position: relative;
+  margin: 0 auto;
+}
+
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+
+/* Code blocks */
+
+code, pre {
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color:#000;
+  font-size:14px;
+}
+
+pre {
+	padding: 4px 12px;
+  background: #FDFEFB;
+  border-radius:4px;
+  border:1px solid #D7D8C8;
+  overflow: auto;
+  overflow-y: hidden;
+	margin-bottom: 32px;
+}
+
+
+/* Tables */
+
+table {
+  width:100%;
+}
+
+table {
+  border: 1px solid #ccc;
+  margin-bottom: 32px;
+  text-align: left;
+ }
+
+th {
+	font-size: 18px;
+	font-weight: normal;
+  padding: 10px;
+  background: #232323;
+  color: #FDFEFB;
+ }
+
+td {
+  padding: 10px;
+	background: #ccc;
+ }
+
+
+/* Wrapper */
+.wrapper {
+  width:960px;
+}
+
+
+/* Header */
+header {
+  width: 145px;
+  height: 35px;
+  position: fixed;
+  margin: 0 30px;
+}
+header img {
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+header a {
+  width: 90px;
+  float: left;
+  margin: 10px;
+  color: #000 ;
+  font-size: 10px;
+  line-height: 10px
+}
+/* Navigation */
+nav .navigation {
+  width: 145px;
+  height: 35px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+/* Vote */
+.vote {
+	background-color: #171717;
+	color: #FDFDFB;
+  width: 45px;
+  height: 45px;
+  right: 0px;
+  float: right;
+  position: fixed;
+	border: 1px solid #000;
+	-webkit-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border-radius: 100%;
+	margin: 30px 25px 0 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.vote p {
+  color: #fff;
+  text-align: center;
+	border-bottom: none;
+	margin: 9px 0 0 0;
+}
+
+
+/* Section - for grade boxes */
+
+section {
+  height: 100%;
+  float: right;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+  
+
+.box_items {
+  width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.box {
+  width: 31%;
+  height: 200px;
+  margin: 0 10px 10px 0;
+  float: left;
+  border: 1px solid black;
+  -webkit-border-radius: 3.14%;
+  -webkit-border-radius: 3.14%;
+  -moz-border-radius: 3.14%;
+  -moz-border-radius: 3.14%;
+  border-radius: 3.14%;
+  border-radius: 3.14%;
+  overflow: hidden;
+}
+.box:nth-of-type(3n+3) {
+  margin-right: 0;
+}
+.box h1, .box  h3 {
+  display: inline-block;
+  margin: 5px 0 5px 0;
+}
+.box h2 {
+  margin: 10px 0 10px 0;
+  line-height: 22px;
+}
+.out_of {
+  font-size: 10px;
+}
+
+.box img {
+  width: 70px;
+  display: block;
+}
+
+/* weather infogram */
+.daily_infografic {
+  width: 100%;
+  height: 233px;
+  background-color: black;
+}
+ul {
+  margin-bottom: 64px;
+}
+ul h3 {
+  color: #fff;
+}
+.chart {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin: 0 10px;
+  vertical-align: top;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 22px;
+}
+/* Footer */
+
+footer {
+  width: 170px;
+  height: 25px;
+  float: left;
+  position:fixed;
+  bottom: 10px;
+	padding-left: 30px;
+}
+footer p {
+  color: #fff;
+}
+
+/* Section -  */
+.about {
+  top:100%;
 }
