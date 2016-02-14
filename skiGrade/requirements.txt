@@ -1,4 +1,0 @@
-Django==1.9.2
-pip==7.1.2
-setuptools==18.2
-wheel==0.24.0
