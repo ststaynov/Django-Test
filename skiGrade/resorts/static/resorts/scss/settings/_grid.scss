@@ -1,0 +1,115 @@
+
+//Susy settings
+$susy-debug-show-image: true;
+/* Changing Susy default global settings */
+$susy: (
+  /* Tells Susy to use 12 columns */
+  columns: 12,
+  column-width: 60px,
+  gutters: 20px/60px,
+
+  container-position: center,
+  gutter-position: split,
+  /* Tells Susy that the container has a max-width of 1120px */
+  container: 1120px,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box,
+    debug: (
+    image: $susy-debug-show-image,
+    color: rgba(tomato, .25),
+    output: overlay,
+    toggle: top right,
+  ),
+
+  use-custom: (
+    background-image: false,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+  );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+.wrap {
+  @include container;
+}
+
+/* Grades Section */
+.grades {
+  @include span(12);
+  @include clearfix;
+
+  .grade__list-item {
+    @include span(3 of 12);
+    margin-bottom: gutter(10);
+
+    &:nth-of-type(1) {
+      @include pre(1.5);
+    }
+    &:nth-of-type(4n+0) {
+      @include pre(1.5);
+      clear: left;
+    }
+    @media (max-width: $breakpoint-tablet) {
+      @include span(4 of 12);
+      &:nth-of-type(1n + 1) {
+        @include pre(0);
+      }
+    }
+    @media (max-width: $breakpoint-mobile) {
+      @include span(6 of 12);
+      &:nth-of-type(1n + 1) {
+        @include pre(0);
+        clear: none;
+      }
+    }
+  }
+}
+/* Grades Section End */
+
+
+/* Blog Section */
+/* Tells Susy there's 8 columns in the blog */
+.blog {
+  @include span(10);
+  @include pre(1);
+}
+/* Tells Susy there's 4 columns in the sidebar, and its the last item on the row. */
+//.sidebar {
+//  @include span(4 last);
+//}
+
+/* 10 column grid for the social */
+.social {
+  @include clearfix;
+
+  .social__list-item {
+    @include gallery(2 of 10);
+    margin-bottom: gutter(10);
+
+    @media (min-width: $breakpoint-tablet) {
+      @include gallery(1 of 10);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.unsocial {
+  //padding: gutter();
+  margin-top: gutter(10);
+  @include clearfix;
+
+  .unsocial__list-item {
+    @include span(4 of 12);
+    @include clearfix;
+
+    @media (max-width: $breakpoint-mobile) {
+      @include span(12);
+      margin-bottom: gutter(10);
+    }
+  }
+}
+/* Blog Section End */

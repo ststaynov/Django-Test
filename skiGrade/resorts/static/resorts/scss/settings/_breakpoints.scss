@@ -1,0 +1,22 @@
+
+$breakpoint-desktop: 960px;
+$breakpoint-tablet: 720px;
+$breakpoint-mobile: 480px;
+
+@mixin above($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin below($width) {
+  @media screen and (max-width: $width - 1) {
+    @content;
+  }
+}
+
+@mixin between($width1, $width2) {
+  @media screen and (min-width: $width1) and (max-width: $width2 - 1) {
+    @content;
+  }
+}

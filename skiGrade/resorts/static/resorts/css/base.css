@@ -1,0 +1,580 @@
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+b,
+strong {
+  font-weight: inherit;
+  /* 1 */ }
+
+b,
+strong {
+  font-weight: bolder;
+  /* 2 */ }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Restore focus style in Firefox 4+ (unset by a rule above)
+ */
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * Address `appearance` set to `searchfield` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Restore font weight (unset by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Changing Susy default global settings */
+/* Makes border-box properties */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrap {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  head {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    color: #333;
+    background: rgba(255, 255, 255, 0.25); }
+  head:before {
+    content: "|||";
+    display: block;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+  head:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: red; }
+  head:hover ~ .wrap,
+  head:hover ~ body .wrap {
+    position: relative; }
+    head:hover ~ .wrap:before,
+    head:hover ~ body .wrap:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: " ";
+      z-index: 998;
+      background-image: linear-gradient(to right, transparent 12.5%, rgba(255, 99, 71, 0.25) 12.5%, rgba(255, 164, 148, 0.25) 87.5%, transparent 87.5%);
+      background-size: 8.33333%;
+      background-origin: content-box;
+      background-clip: content-box;
+      background-position: left top; }
+
+/* Grades Section */
+.grades {
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%; }
+  .grades::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .grades .grade__list-item {
+    width: 22.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    margin-bottom: 1.25%; }
+    .grades .grade__list-item:nth-of-type(1) {
+      margin-left: 13.54167%; }
+    .grades .grade__list-item:nth-of-type(4n+0) {
+      margin-left: 13.54167%;
+      clear: left; }
+    @media (max-width: 720px) {
+      .grades .grade__list-item {
+        width: 31.25%;
+        float: left;
+        margin-left: 1.04167%;
+        margin-right: 1.04167%; }
+        .grades .grade__list-item:nth-of-type(1n + 1) {
+          margin-left: 1.04167%; } }
+    @media (max-width: 480px) {
+      .grades .grade__list-item {
+        width: 47.91667%;
+        float: left;
+        margin-left: 1.04167%;
+        margin-right: 1.04167%; }
+        .grades .grade__list-item:nth-of-type(1n + 1) {
+          margin-left: 1.04167%;
+          clear: none; } }
+
+/* Grades Section End */
+/* Blog Section */
+/* Tells Susy there's 8 columns in the blog */
+.blog {
+  width: 81.25%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  margin-left: 9.375%; }
+
+/* Tells Susy there's 4 columns in the sidebar, and its the last item on the row. */
+/* 10 column grid for the social */
+.social::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.social .social__list-item {
+  width: 17.5%;
+  float: left;
+  margin-bottom: 1.25%; }
+  .social .social__list-item:nth-child(5n + 1) {
+    margin-left: 1.25%;
+    margin-right: -100%;
+    clear: both; }
+  .social .social__list-item:nth-child(5n + 2) {
+    margin-left: 21.25%;
+    margin-right: -100%;
+    clear: none; }
+  .social .social__list-item:nth-child(5n + 3) {
+    margin-left: 41.25%;
+    margin-right: -100%;
+    clear: none; }
+  .social .social__list-item:nth-child(5n + 4) {
+    margin-left: 61.25%;
+    margin-right: -100%;
+    clear: none; }
+  .social .social__list-item:nth-child(5n + 5) {
+    margin-left: 81.25%;
+    margin-right: -100%;
+    clear: none; }
+  @media (min-width: 720px) {
+    .social .social__list-item {
+      width: 7.5%;
+      float: left;
+      margin-bottom: 0; }
+      .social .social__list-item:nth-child(10n + 1) {
+        margin-left: 1.25%;
+        margin-right: -100%;
+        clear: both; }
+      .social .social__list-item:nth-child(10n + 2) {
+        margin-left: 11.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 3) {
+        margin-left: 21.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 4) {
+        margin-left: 31.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 5) {
+        margin-left: 41.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 6) {
+        margin-left: 51.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 7) {
+        margin-left: 61.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 8) {
+        margin-left: 71.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 9) {
+        margin-left: 81.25%;
+        margin-right: -100%;
+        clear: none; }
+      .social .social__list-item:nth-child(10n + 10) {
+        margin-left: 91.25%;
+        margin-right: -100%;
+        clear: none; } }
+
+.unsocial {
+  margin-top: 1.25%; }
+  .unsocial::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .unsocial .unsocial__list-item {
+    width: 31.25%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%; }
+    .unsocial .unsocial__list-item::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (max-width: 480px) {
+      .unsocial .unsocial__list-item {
+        width: 97.91667%;
+        float: left;
+        margin-left: 1.04167%;
+        margin-right: 1.04167%;
+        margin-bottom: 1.25%; } }
+
+/* Blog Section End */
+.c-typography-default {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none; }
+
+.c-typography-header-1 {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 70px;
+  line-height: 72px;
+  word-break: normal; }
+  @media screen and (max-width: 529px) {
+    .c-typography-header-1 {
+      font-size: 40px;
+      line-height: 44px; } }
+
+.c-typography-header-2 {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 50px;
+  line-height: 52px; }
+  @media screen and (max-width: 529px) {
+    .c-typography-header-2 {
+      font-size: 32px;
+      line-height: 36px; } }
+
+.c-typography-header-3 {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 40px;
+  line-height: 44px; }
+  @media screen and (max-width: 529px) {
+    .c-typography-header-3 {
+      font-size: 26px;
+      line-height: 30px; } }
+
+.c-typography-header-4 {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 26px;
+  line-height: 30px; }
+  @media screen and (max-width: 529px) {
+    .c-typography-header-4 {
+      font-family: Campton Medium, sans-serif;
+      font-size: 18px;
+      line-height: 25px; } }
+
+.c-typography-header-5 {
+  hyphens: auto;
+  font-family: Campton Medium, sans-serif;
+  font-size: 18px;
+  line-height: 25px; }
+
+.c-typography-intro {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 22px;
+  line-height: 32px; }
+  @media screen and (max-width: 529px) {
+    .c-typography-intro {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.c-typography-paragraph {
+  hyphens: auto;
+  font-family: Campton Book, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none; }
+
+html {
+  background-image: -webkit-linear-gradient( right , #00FFCC, #267F7F);
+  background-image: linear-gradient(to left, #00FFCC, #267F7F); }
+
+body {
+  height: 100%; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden; }
+
+section {
+  display: block;
+  background-color: rgba(255, 140, 0, 0.2);
+  height: 100vh; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center; }
+
+h2 {
+  background: aliceblue; }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* Grade Section */
+.grades {
+  position: relative;
+  height: 75vh;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/* Grade Section End */
+/* Weather Section */
+.weather {
+  height: 50vh;
+  background-color: rgba(232, 189, 0, 0.7); }
+
+/* Weather Section End*/

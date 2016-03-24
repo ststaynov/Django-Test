@@ -1,0 +1,40 @@
+html {
+    @include background-image(linear-gradient(to left,#00FFCC, #267F7F));
+}
+body {
+  height: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+section {
+  @include clearfix;
+  display: block;
+  background-color: rgba(darkorange, 0.2);
+  height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,p {
+  text-align: center;
+}
+h2 {
+  background: aliceblue;
+}
+.clearfix {
+  @include clearfix;
+}
+/* Grade Section */
+.grades {
+  position: relative;
+  height: 75vh;
+  background-color: rgba(white,0.7);
+}
+/* Grade Section End */
+
+/* Weather Section */
+  .weather {
+    height: 50vh;
+    background-color: rgba(232,189,0,0.7);
+  }
+/* Weather Section End*/
