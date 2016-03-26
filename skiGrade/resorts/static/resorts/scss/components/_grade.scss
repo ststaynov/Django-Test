@@ -1,0 +1,27 @@
+
+.c-grades {
+  @include mobile {
+    position: relative;
+    height: 75vh;
+    background-color: rgba(white, 0.7);
+    overflow: hidden;
+
+    .e-grade-list {
+      margin: 0;
+      background-color: deeppink;
+
+      .e-grade-item {
+        background-color: darkorange;
+        height: 37vh;
+      }
+    }
+  }
+
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
+  }
+}

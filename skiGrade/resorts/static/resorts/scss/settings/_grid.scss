@@ -4,9 +4,9 @@ $susy-debug-show-image: true;
 /* Changing Susy default global settings */
 $susy: (
   /* Tells Susy to use 12 columns */
-  columns: 12,
-  column-width: 60px,
-  gutters: 20px/60px,
+  columns: 24,
+  column-width: 30px,
+  gutters: 10px/30px,
 
   container-position: center,
   gutter-position: split,
@@ -38,29 +38,32 @@ $susy: (
 }
 
 /* Grades Section */
-.grades {
-  @include span(12);
+.e-grade-list {
+  @include span(24);
   @include clearfix;
 
-  .grade__list-item {
-    @include span(3 of 12);
-    margin-bottom: gutter(10);
+  .e-grade-item {
+    @include span(5 of 24);
+    margin-bottom: gutter(20);
 
     &:nth-of-type(1) {
-      @include pre(1.5);
+      @include pre(4.7);
     }
+
     &:nth-of-type(4n+0) {
-      @include pre(1.5);
+      @include pre(4.7);
       clear: left;
     }
+
     @media (max-width: $breakpoint-tablet) {
-      @include span(4 of 12);
+      @include span(8 of 24);
       &:nth-of-type(1n + 1) {
         @include pre(0);
       }
     }
+
     @media (max-width: $breakpoint-mobile) {
-      @include span(6 of 12);
+      @include span(12 of 24);
       &:nth-of-type(1n + 1) {
         @include pre(0);
         clear: none;

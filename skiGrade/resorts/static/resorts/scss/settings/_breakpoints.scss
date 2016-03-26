@@ -1,8 +1,27 @@
 
+// Breakpoints
 $breakpoint-desktop: 960px;
 $breakpoint-tablet: 720px;
 $breakpoint-mobile: 480px;
 
+// Helpers
+@mixin mobile() {
+  @content;
+}
+
+@mixin tablet() {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Extra
 @mixin above($width) {
   @media screen and (min-width: $width) {
     @content;

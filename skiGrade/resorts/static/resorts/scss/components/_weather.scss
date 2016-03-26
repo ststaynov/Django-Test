@@ -1,0 +1,14 @@
+
+.c-weather {
+  @include mobile {
+    height: 50vh;
+    background-color: rgba(232, 189, 0, 0.7);
+  }
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
+  }
+}

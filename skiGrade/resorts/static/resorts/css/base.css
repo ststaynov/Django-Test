@@ -304,59 +304,59 @@ optgroup {
       content: " ";
       z-index: 998;
       background-image: linear-gradient(to right, transparent 12.5%, rgba(255, 99, 71, 0.25) 12.5%, rgba(255, 164, 148, 0.25) 87.5%, transparent 87.5%);
-      background-size: 8.33333%;
+      background-size: 4.16667%;
       background-origin: content-box;
       background-clip: content-box;
       background-position: left top; }
 
 /* Grades Section */
-.grades {
-  width: 97.91667%;
+.e-grade-list {
+  width: 98.95833%;
   float: left;
-  margin-left: 1.04167%;
-  margin-right: 1.04167%; }
-  .grades::after {
+  margin-left: 0.52083%;
+  margin-right: 0.52083%; }
+  .e-grade-list::after {
     clear: both;
     content: "";
     display: table; }
-  .grades .grade__list-item {
-    width: 22.91667%;
+  .e-grade-list .e-grade-item {
+    width: 19.79167%;
     float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-    margin-bottom: 1.25%; }
-    .grades .grade__list-item:nth-of-type(1) {
-      margin-left: 13.54167%; }
-    .grades .grade__list-item:nth-of-type(4n+0) {
-      margin-left: 13.54167%;
+    margin-left: 0.52083%;
+    margin-right: 0.52083%;
+    margin-bottom: 0.625%; }
+    .e-grade-list .e-grade-item:nth-of-type(1) {
+      margin-left: 20.10417%; }
+    .e-grade-list .e-grade-item:nth-of-type(4n+0) {
+      margin-left: 20.10417%;
       clear: left; }
     @media (max-width: 720px) {
-      .grades .grade__list-item {
-        width: 31.25%;
+      .e-grade-list .e-grade-item {
+        width: 32.29167%;
         float: left;
-        margin-left: 1.04167%;
-        margin-right: 1.04167%; }
-        .grades .grade__list-item:nth-of-type(1n + 1) {
-          margin-left: 1.04167%; } }
+        margin-left: 0.52083%;
+        margin-right: 0.52083%; }
+        .e-grade-list .e-grade-item:nth-of-type(1n + 1) {
+          margin-left: 0.52083%; } }
     @media (max-width: 480px) {
-      .grades .grade__list-item {
-        width: 47.91667%;
+      .e-grade-list .e-grade-item {
+        width: 48.95833%;
         float: left;
-        margin-left: 1.04167%;
-        margin-right: 1.04167%; }
-        .grades .grade__list-item:nth-of-type(1n + 1) {
-          margin-left: 1.04167%;
+        margin-left: 0.52083%;
+        margin-right: 0.52083%; }
+        .e-grade-list .e-grade-item:nth-of-type(1n + 1) {
+          margin-left: 0.52083%;
           clear: none; } }
 
 /* Grades Section End */
 /* Blog Section */
 /* Tells Susy there's 8 columns in the blog */
 .blog {
-  width: 81.25%;
+  width: 40.625%;
   float: left;
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  margin-left: 9.375%; }
+  margin-left: 0.52083%;
+  margin-right: 0.52083%;
+  margin-left: 4.6875%; }
 
 /* Tells Susy there's 4 columns in the sidebar, and its the last item on the row. */
 /* 10 column grid for the social */
@@ -452,10 +452,10 @@ optgroup {
       display: table; }
     @media (max-width: 480px) {
       .unsocial .unsocial__list-item {
-        width: 97.91667%;
+        width: 48.95833%;
         float: left;
-        margin-left: 1.04167%;
-        margin-right: 1.04167%;
+        margin-left: 0.52083%;
+        margin-right: 0.52083%;
         margin-bottom: 1.25%; } }
 
 /* Blog Section End */
@@ -565,16 +565,18 @@ h2 {
   content: "";
   display: table; }
 
-/* Grade Section */
-.grades {
+.c-grades {
   position: relative;
   height: 75vh;
-  background-color: rgba(255, 255, 255, 0.7); }
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden; }
+  .c-grades .e-grade-list {
+    margin: 0;
+    background-color: deeppink; }
+    .c-grades .e-grade-list .e-grade-item {
+      background-color: darkorange;
+      height: 37vh; }
 
-/* Grade Section End */
-/* Weather Section */
-.weather {
+.c-weather {
   height: 50vh;
   background-color: rgba(232, 189, 0, 0.7); }
-
-/* Weather Section End*/

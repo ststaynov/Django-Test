@@ -3,6 +3,6 @@
  */
 
 
-$('.grades').on('click', function () {
+$('.c-grades').on('click', function () {
     $(this).css('background-color','red');
 });
