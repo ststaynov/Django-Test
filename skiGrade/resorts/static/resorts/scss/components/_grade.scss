@@ -3,18 +3,31 @@
   @include mobile {
     position: relative;
     height: 75vh;
-    background-color: rgba(white, 0.7);
     overflow: hidden;
 
     .e-grade-list {
-      margin: 0;
-      background-color: deeppink;
+      margin-top: 0;
+      margin-bottom: 0;
 
       .e-grade-item {
-        background-color: darkorange;
         height: 37vh;
+        padding-top: 25px;
+        background-color: rgba(255,255,255,0.2);
+        text-align: center;
+
+        .grade-image {
+          width: 45%;
+          margin: auto;
+        }
+        .grade-description {
+
+        }
       }
     }
+  }
+
+  @include below($breakpoint-mobile) {
+    height: 112vh;
   }
 
   @include tablet {

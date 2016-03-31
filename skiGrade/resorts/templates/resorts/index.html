@@ -1,30 +1,64 @@
 {% extends 'resorts/base.html' %}
-{% block title %}My heading{% endblock %}
+
+{% load staticfiles %}
+{#{% block title %} A Resort {% endblock %}#}
 
 {% block content %}
     <header class="c-page-header">
-
+        <h1 class="e-header-title">A Resort</h1>
     </header>
 
-    <section class="grade-section">
+    <section class="grade-section clearfix">
+        <div class="section-grades-image">
+
+        </div>
         <div class="wrap">
             <div class="c-grades">
                 <ul class="e-grade-list">
-                    <li class="e-grade-item"><p>6/12</p></li>
-                    <li class="e-grade-item"><p>6/12</p></li>
-                    <li class="e-grade-item"><p>6/12</p></li>
-                    <li class="e-grade-item"><p>6/12</p></li>
-                    <li class="e-grade-item"><p>6/12</p></li>
-                    <li class="e-grade-item"><p>6/12</p></li>
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
+
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
+
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
+
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
+
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
+
+                    <li class="e-grade-item">
+                        <img class="grade-image" src="{% static 'resorts/images/snowflake.svg' %}" alt="snowflake">
+                        <h4 class="grade-description">some description</h4>
+                        <h3>6/12</h3>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section class="weather-section">
+    <section class="weather-section clearfix">
         <div class="wrap">
             <div class="c-weather">
-                
+
             </div>
         </div>
     </section>

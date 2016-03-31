@@ -1,4 +1,11 @@
 
 .c-page-header {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
 
+  .e-header-title {
+    width: 100%;
+
+  }
 }
