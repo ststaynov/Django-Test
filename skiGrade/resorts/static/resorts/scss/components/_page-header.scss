@@ -4,8 +4,21 @@
   position: fixed;
   z-index: 9999;
 
-  .e-header-title {
+  .wrap {
     width: 100%;
+    padding: 25px;
+    position: relative;
+    text-align: center;
 
+    .e-logo {
+      width: 50px;
+      display: inline-block;
+      float: left;
+    }
+
+    .e-header-title {
+      display: inline-block;
+      margin: 0;
+    }
   }
 }

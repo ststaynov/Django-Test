@@ -588,8 +588,18 @@ h2 {
   width: 100%;
   position: fixed;
   z-index: 9999; }
-  .c-page-header .e-header-title {
-    width: 100%; }
+  .c-page-header .wrap {
+    width: 100%;
+    padding: 25px;
+    position: relative;
+    text-align: center; }
+    .c-page-header .wrap .e-logo {
+      width: 50px;
+      display: inline-block;
+      float: left; }
+    .c-page-header .wrap .e-header-title {
+      display: inline-block;
+      margin: 0; }
 
 .c-grades {
   position: relative;
