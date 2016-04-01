@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 9999;
 
-  .wrap {
+  .container {
     width: 100%;
     padding: 25px;
     position: relative;
@@ -19,6 +19,25 @@
     .e-header-title {
       display: inline-block;
       margin: 0;
+      padding: 10px 75px;
+      border: 1px solid $color-secondary-black;
+      @include typography-header-1;
+    }
+
+    .e-action-container {
+      display: inline-block;
+
+      .log-in {
+        display: inline-block;
+      }
+
+      .log-out {
+        display: inline-block;
+      }
+
+      .sign-up {
+        display: inline-block;
+      }
     }
   }
 }

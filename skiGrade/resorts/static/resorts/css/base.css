@@ -459,9 +459,14 @@ optgroup {
         margin-bottom: 1.25%; } }
 
 /* Blog Section End */
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot");
+  src: url("../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Josefin_Sans/josefinsans-bold-webfont.woff") format("woff"), url("../../fonts/Josefin_Sans/josefinsans-bold-webfont.ttf") format("truetype"), url("../../fonts/Josefin_Sans/josefinsans-bold-webfont.svg#webfont") format("svg"); }
+
 .c-typography-default {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -469,7 +474,7 @@ optgroup {
 
 .c-typography-header-1 {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 70px;
   line-height: 72px;
   word-break: normal; }
@@ -480,7 +485,7 @@ optgroup {
 
 .c-typography-header-2 {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 50px;
   line-height: 52px; }
   @media screen and (max-width: 529px) {
@@ -490,7 +495,7 @@ optgroup {
 
 .c-typography-header-3 {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 40px;
   line-height: 44px; }
   @media screen and (max-width: 529px) {
@@ -500,24 +505,24 @@ optgroup {
 
 .c-typography-header-4 {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 26px;
   line-height: 30px; }
   @media screen and (max-width: 529px) {
     .c-typography-header-4 {
-      font-family: Campton Medium, sans-serif;
+      font-family: Josefin Sans, sans-serif;
       font-size: 18px;
       line-height: 25px; } }
 
 .c-typography-header-5 {
   hyphens: auto;
-  font-family: Campton Medium, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 18px;
   line-height: 25px; }
 
 .c-typography-intro {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 22px;
   line-height: 32px; }
   @media screen and (max-width: 529px) {
@@ -527,7 +532,7 @@ optgroup {
 
 .c-typography-paragraph {
   hyphens: auto;
-  font-family: Campton Book, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
@@ -588,18 +593,37 @@ h2 {
   width: 100%;
   position: fixed;
   z-index: 9999; }
-  .c-page-header .wrap {
+  .c-page-header .container {
     width: 100%;
     padding: 25px;
     position: relative;
     text-align: center; }
-    .c-page-header .wrap .e-logo {
+    .c-page-header .container .e-logo {
       width: 50px;
       display: inline-block;
       float: left; }
-    .c-page-header .wrap .e-header-title {
+    .c-page-header .container .e-header-title {
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      padding: 10px 75px;
+      border: 1px solid #333;
+      hyphens: auto;
+      font-family: Josefin Sans, sans-serif;
+      font-size: 70px;
+      line-height: 72px;
+      word-break: normal; }
+      @media screen and (max-width: 529px) {
+        .c-page-header .container .e-header-title {
+          font-size: 40px;
+          line-height: 44px; } }
+    .c-page-header .container .e-action-container {
+      display: inline-block; }
+      .c-page-header .container .e-action-container .log-in {
+        display: inline-block; }
+      .c-page-header .container .e-action-container .log-out {
+        display: inline-block; }
+      .c-page-header .container .e-action-container .sign-up {
+        display: inline-block; }
 
 .c-grades {
   position: relative;

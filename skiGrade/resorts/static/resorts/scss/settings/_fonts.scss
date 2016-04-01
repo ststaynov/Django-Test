@@ -1,14 +1,16 @@
-$klavika: Klavika, sans-serif;
-$corbel: Corbel, sans-serif;
-$corbel-regular: Corbel W01 Regular, sans-serif;
-$corbel-bold: Corbel W01 Bold, sans-serif;
-$corbel-italic: Corbel W01 Italic, sans-serif;
-$corbel-bold-italic: Corbel W01 Bold Italic, sans-serif;
 
-$font-campton-book: Campton Book, sans-serif;
-$font-campton-medium: Campton Medium, sans-serif;
-$font-campton-semibold: Campton SemiBold, sans-serif;
+@font-face{
+	font-family: 'MyWebFont';
+	src: url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot');
+	src: url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.woff') format('woff'),
+	     url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.ttf') format('truetype'),
+	     url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.svg#webfont') format('svg');
+}
 
-// Redesign
+
+$font-josefin-bold: Josefin Sans, sans-serif;
+//$font-campton-medium: Campton Medium, sans-serif;
+//$font-campton-semibold: Campton SemiBold, sans-serif;
 
 $font-base  : "Helvetica Neue", "Helvetica", "Arial", sans-serif;

@@ -1,7 +1,7 @@
 
 @mixin typography-default($line-height:24px 24px) {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 16px;
   line-height: nth($line-height, 1);
   text-decoration: none;
@@ -10,7 +10,7 @@
 
 @mixin typography-science-museum {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 50px;
   line-height: 52px;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 
 @mixin typography-header-1 {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 70px;
   line-height: 72px;
   word-break: normal;
@@ -31,7 +31,7 @@
 
 @mixin typography-header-2 {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 50px;
   line-height: 52px;
 
@@ -43,7 +43,7 @@
 
 @mixin typography-header-3($line-height: 44px 30px) {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 40px;
   line-height: nth($line-height, 1);
 
@@ -55,12 +55,12 @@
 
 @mixin typography-header-4($line-height:30px 25px) {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 26px;
   line-height: nth($line-height, 1);
 
   @include below(530px) {
-    font-family: $font-campton-medium;
+    font-family: $font-josefin-bold;
     font-size: 18px;
     line-height: nth($line-height, 2);
   }
@@ -68,14 +68,14 @@
 
 @mixin typography-header-5 {
   hyphens: auto;
-  font-family: $font-campton-medium;
+  font-family: $font-josefin-bold;
   font-size: 18px;
   line-height: 25px;
 }
 
 @mixin typography-intro {
   hyphens: auto;
-  font-family: $font-campton-book;
+  font-family: $font-josefin-bold;
   font-size: 22px;
   line-height: 32px;
 
@@ -90,7 +90,7 @@
 }
 
 @mixin typography-button {
-  font-family: $font-campton-medium;
+  font-family: $font-josefin-bold;
   font-size: 16px;
   line-height: 30px;
   text-decoration: none;
@@ -98,7 +98,7 @@
 }
 
 @mixin typography-label {
-  font-family: $font-campton-medium;
+  font-family: $font-josefin-bold;
   font-size: 14px;
   line-height: 50px;
   text-decoration: none;
@@ -107,7 +107,7 @@
 
 @mixin typography-caption {
   @include typography-paragraph;
-  font-family: $font-campton-medium;
+  font-family: $font-josefin-bold;
 }
 
 .c-typography-default {
