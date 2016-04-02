@@ -21,7 +21,8 @@
       margin: 0;
       padding: 10px 75px;
       border: 1px solid $color-secondary-black;
-      @include typography-header-1;
+      @include typography-header-3;
+      @include prefix-icon($icon-circle-down)
     }
 
     .e-action-container {

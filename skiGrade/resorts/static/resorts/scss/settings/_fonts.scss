@@ -1,6 +1,6 @@
 
 @font-face{
-	font-family: 'MyWebFont';
+	font-family: Josefin Sans, sans-serif;
 	src: url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot');
 	src: url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
 	     url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.woff') format('woff'),
@@ -8,6 +8,19 @@
 	     url('../../fonts/Josefin_Sans/josefinsans-bold-webfont.svg#webfont') format('svg');
 }
 
+// icon font
+@font-face{
+    font-family: 'icomoon';
+    src:    url('../../fonts/icomoon/icomoon.eot?uzcu4s');
+    src:    url('../../fonts/icomoon/icomoon.eot?uzcu4s#iefix') format('embedded-opentype'),
+        url('../../fonts/icomoon/icomoon.ttf?uzcu4s') format('truetype'),
+        url('../../fonts/icomoon/icomoon.woff?uzcu4s') format('woff'),
+        url('../../fonts/icomoon/icomoon.svg?uzcu4s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// letter-spacing?
 
 $font-josefin-bold: Josefin Sans, sans-serif;
 //$font-campton-medium: Campton Medium, sans-serif;
