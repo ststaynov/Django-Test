@@ -1,0 +1,23 @@
+{% extends 'resorts/base.html' %}
+
+{% load staticfiles %}
+{#{% block title %} A Resort {% endblock %}#}
+
+{% block content %}
+    <header class="c-page-header">
+        <div class="container">
+            <img src="{% static 'resorts/images/logo.svg' %}" alt="" class="e-logo">
+            <h1 class="e-header-title">A Resort</h1>
+            <ul class="e-action-container">
+                <li class="log-in"></li>
+                <li class="log-out"></li>
+                <li class="sign-up"></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <footer class="c-page-footer">
+
+    </footer>
+{% endblock %}

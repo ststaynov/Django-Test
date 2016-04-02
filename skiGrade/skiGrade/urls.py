@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^$', 'resorts.views.index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^login/', 'resorts.views.login'),
 ]
