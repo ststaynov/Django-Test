@@ -1,0 +1,13 @@
+
+.c-menu-overlay {
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.64);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $z-overlay;
+
+  &.is-active {
+    height: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+
+.c-close-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -35px;
+  right: 50px;
+  background-color: #267F7F;
+
+  .close-item {
+    @include text-to-icon($icon-cross);
+    text-align: center;
+    text-decoration: none;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      font-size: 28px;
+      line-height: 50px;
+      color: $color-black;
+    }
+  }
+
+  span {
+    width: 50px;
+    height: 50px;
+  }
+}

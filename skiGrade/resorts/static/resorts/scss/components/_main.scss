@@ -28,14 +28,16 @@ h2 {
   @include clearfix;
 }
 
-.grade-section, .weather-section {
+.grade-section,
+.weather-section,
+.login-section {
   @include clearfix;
   display: block;
   background-color: rgba(darkorange, 0.2);
   height: 100vh;
 }
 
-/* GRADE SECTION START*/
+/* GRADE SECTION START */
 .grade-section {
   padding-top: 165px;
   margin-bottom: 50px;
@@ -53,4 +55,16 @@ h2 {
     height: 140vh;
   }
 }
-/* GRADE SECTION END*/
+/* GRADE SECTION END */
+
+/* LOGIN SECTION START */
+.login-section {
+  margin-top: 175px;
+  background-color: pink;
+
+  .wrap {
+    position: relative;
+    height: 100%;
+  }
+}
+/* LOGIN SECTION END */

@@ -2,7 +2,8 @@
 .c-page-header {
   width: 100%;
   position: fixed;
-  z-index: 9999;
+  top: 0;
+  z-index: $z-50;
 
   .container {
     width: 100%;
@@ -16,33 +17,64 @@
       float: left;
     }
 
-    .e-header-title {
-      display: inline-block;
+    .e-menu-title {
+      position: relative;
       margin: 0;
       padding: 10px 75px;
       border: 1px solid $color-secondary-black;
+      background-color: transparent;
       @include typography-header-3;
       @include prefix-icon($icon-circle-down);
+      z-index: $z-menu;
 
       &::before {
         margin-right: 15px;
+      }
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-black;
+      }
+
+      &.is-active {
+        color: $color-white;
+        background-color: $color-black;
+      }
+    }
+
+    .e-menu-list {
+      font-size: 0;
+    }
+
+    .e-menu-item {
+      display: none;
+      cursor: hand;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $color-black;
+      }
+
+      &.e-menu-title {
+        display: inline-block;
       }
     }
 
     .e-action-container {
       display: inline-block;
+    }
 
-      .log-in {
-        display: inline-block;
-      }
+    .log-in {
+      display: inline-block;
+    }
 
-      .log-out {
-        display: inline-block;
-      }
+    .log-out {
+      display: inline-block;
+    }
 
-      .sign-up {
-        display: inline-block;
-      }
+    .sign-up {
+      display: inline-block;
     }
   }
 }

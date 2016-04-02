@@ -32,7 +32,8 @@ $icon-facebook2: '\e907';
   span {
     @include img-replace;
   }
-  &:before {
+  &::before {
+    position: absolute;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
@@ -47,7 +48,7 @@ $icon-facebook2: '\e907';
 
 // this is to display an icon in front of a label
 @mixin prefix-icon($pua) {
-  &:before {
+  &::before {
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
@@ -61,7 +62,7 @@ $icon-facebook2: '\e907';
 }
 // this is to display an icon after of a label
 @mixin postfix-icon($pua) {
-  &:after {
+  &::after {
     font-weight: normal;
     font-variant: normal;
     text-transform: none;

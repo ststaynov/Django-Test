@@ -546,21 +546,6 @@ optgroup {
   text-decoration: none;
   text-transform: none; }
 
-.z-10 {
-  z-index: 10; }
-
-.z-20 {
-  z-index: 20; }
-
-.z-30 {
-  z-index: 30; }
-
-.z-40 {
-  z-index: 40; }
-
-.z-50 {
-  z-index: 50; }
-
 html {
   background-image: -webkit-linear-gradient( right , #00FFCC, #267F7F);
   background-image: linear-gradient(to left, #00FFCC, #267F7F); }
@@ -587,16 +572,20 @@ h2 {
   content: "";
   display: table; }
 
-.grade-section, .weather-section {
+.grade-section,
+.weather-section,
+.login-section {
   display: block;
   background-color: rgba(255, 140, 0, 0.2);
   height: 100vh; }
-  .grade-section::after, .weather-section::after {
+  .grade-section::after,
+  .weather-section::after,
+  .login-section::after {
     clear: both;
     content: "";
     display: table; }
 
-/* GRADE SECTION START*/
+/* GRADE SECTION START */
 .grade-section {
   padding-top: 165px;
   margin-bottom: 50px; }
@@ -611,11 +600,21 @@ h2 {
     .grade-section {
       height: 140vh; } }
 
-/* GRADE SECTION END*/
+/* GRADE SECTION END */
+/* LOGIN SECTION START */
+.login-section {
+  margin-top: 175px;
+  background-color: pink; }
+  .login-section .wrap {
+    position: relative;
+    height: 100%; }
+
+/* LOGIN SECTION END */
 .c-page-header {
   width: 100%;
   position: fixed;
-  z-index: 9999; }
+  top: 0;
+  z-index: 50; }
   .c-page-header .container {
     width: 100%;
     padding: 25px;
@@ -625,20 +624,22 @@ h2 {
       width: 50px;
       display: inline-block;
       float: left; }
-    .c-page-header .container .e-header-title {
-      display: inline-block;
+    .c-page-header .container .e-menu-title {
+      position: relative;
       margin: 0;
       padding: 10px 75px;
       border: 1px solid #333;
+      background-color: transparent;
       hyphens: auto;
       font-family: Josefin Sans, sans-serif;
       font-size: 40px;
-      line-height: 44px; }
+      line-height: 44px;
+      z-index: 600; }
       @media screen and (max-width: 529px) {
-        .c-page-header .container .e-header-title {
+        .c-page-header .container .e-menu-title {
           font-size: 26px;
           line-height: 30px; } }
-      .c-page-header .container .e-header-title:before {
+      .c-page-header .container .e-menu-title::before {
         font-weight: normal;
         font-variant: normal;
         text-transform: none;
@@ -648,16 +649,85 @@ h2 {
         text-rendering: optimizeLegibility;
         font-family: icomoon;
         content: ""; }
-      .c-page-header .container .e-header-title::before {
+      .c-page-header .container .e-menu-title::before {
         margin-right: 15px; }
+      .c-page-header .container .e-menu-title:hover {
+        color: #fff;
+        background-color: #000; }
+      .c-page-header .container .e-menu-title.is-active {
+        color: #fff;
+        background-color: #000; }
+    .c-page-header .container .e-menu-list {
+      font-size: 0; }
+    .c-page-header .container .e-menu-item {
+      display: none;
+      cursor: hand;
+      cursor: pointer; }
+      .c-page-header .container .e-menu-item a {
+        text-decoration: none;
+        color: #000; }
+      .c-page-header .container .e-menu-item.e-menu-title {
+        display: inline-block; }
     .c-page-header .container .e-action-container {
       display: inline-block; }
-      .c-page-header .container .e-action-container .log-in {
-        display: inline-block; }
-      .c-page-header .container .e-action-container .log-out {
-        display: inline-block; }
-      .c-page-header .container .e-action-container .sign-up {
-        display: inline-block; }
+    .c-page-header .container .log-in {
+      display: inline-block; }
+    .c-page-header .container .log-out {
+      display: inline-block; }
+    .c-page-header .container .sign-up {
+      display: inline-block; }
+
+.c-close-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -35px;
+  right: 50px;
+  background-color: #267F7F; }
+  .c-close-button .close-item {
+    text-align: center;
+    text-decoration: none; }
+    .c-close-button .close-item span {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      text-indent: 10px;
+      white-space: nowrap;
+      top: 0;
+      left: 0; }
+    .c-close-button .close-item::before {
+      position: absolute;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      vertical-align: bottom;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-family: icomoon;
+      content: ""; }
+    .c-close-button .close-item::before {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      font-size: 28px;
+      line-height: 50px;
+      color: #000; }
+  .c-close-button span {
+    width: 50px;
+    height: 50px; }
+
+.c-menu-overlay {
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.64);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500; }
+  .c-menu-overlay.is-active {
+    height: 100%; }
 
 .c-grades {
   position: relative;
@@ -681,3 +751,9 @@ h2 {
 .c-weather {
   height: 50vh;
   background-color: rgba(232, 189, 0, 0.7); }
+
+.c-side-pattern {
+  width: 50px;
+  height: 100%;
+  float: right;
+  background-color: #333; }
