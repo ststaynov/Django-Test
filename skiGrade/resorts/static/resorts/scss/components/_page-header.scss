@@ -22,7 +22,11 @@
       padding: 10px 75px;
       border: 1px solid $color-secondary-black;
       @include typography-header-3;
-      @include prefix-icon($icon-circle-down)
+      @include prefix-icon($icon-circle-down);
+
+      &::before {
+        margin-right: 15px;
+      }
     }
 
     .e-action-container {
