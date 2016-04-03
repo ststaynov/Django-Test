@@ -15,7 +15,25 @@
             </ul>
         </div>
     </header>
+    <div id="patterns" style="height:0;">
+        <svg height="10" width="10" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <pattern id="circles-1" patternUnits="userSpaceOnUse" width="10" height="10">
+              <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSJ3aGl0ZSIgLz4KICA8Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIgZmlsbD0iYmxhY2siLz4KPC9zdmc+" x="0" y="0" width="10" height="10">
+              </image>
+            </pattern>
+          </defs>
+        </svg>
 
+        <svg height="8" width="8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="8" height="8">
+              <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg==" x="0" y="0" width="8" height="8">
+              </image>
+            </pattern>
+          </defs>
+        </svg>
+    </div>
 
     <section class="login-section">
         <div class="wrap">
@@ -24,37 +42,39 @@
                     <span>close</span>
                 </a>
             </div>
-            <div class="signup-box">
-              <form class="hidden native_form">
-                  <input type="text" name="username"></input>
-                  <input type="email" name="email"></input>
-                  <input type="text" name="first_name"></input>
-                  <input type="text" name="last_name"></input>
-                  <input type="password" name="pass_original"></input>
-                  <input type="password" name="pass_check"></input>
-              </form>
-              <p class="signup-box-body">
-                I would like my username to be
-                <span id="username" contenteditable>blaketarter</span>,
-                and the email for my account to be
-                <span id="email" contenteditable>******@gmail.com</span>.
-                My first name is
-                <span id="first_name" contenteditable>Blake</span>
-                and my last name is
-                <span id="last_name" contenteditable>Tarter</span>.
-                My password should be
-                <span id="pass_original" contenteditable>********</span>,
-                but to double check that it should be
-                <span id="pass_check" contenteditable>********</span>.
-            </p>
+            <div class="signup-wrap">
+                <div class="signup-box">
+                  <form class="hidden native_form">
+                      <input type="text" name="username"></input>
+                      <input type="email" name="email"></input>
+                      <input type="text" name="first_name"></input>
+                      <input type="text" name="last_name"></input>
+                      <input type="password" name="pass_original"></input>
+                      <input type="password" name="pass_check"></input>
+                  </form>
+                  <p class="signup-box-body">
+                    I would like my username to be
+                    <span id="username" contenteditable>blaketarter</span>,
+                    and the email for my account to be
+                    <span id="email" contenteditable>******@gmail.com</span>.
+                    My first name is
+                    <span id="first_name" contenteditable>Blake</span>
+                    and my last name is
+                    <span id="last_name" contenteditable>Tarter</span>.
+                    My password should be
+                    <span id="pass_original" contenteditable>********</span>,
+                    but to double check that it should be
+                    <span id="pass_check" contenteditable>********</span>.
+                </p>
 
-                <!--<p id="status">That info looks good!</p>-->
+                    <!--<p id="status">That info looks good!</p>-->
 
-                <button id="submit">Get Started</button>
+                    <button id="submit">Get Started</button>
+                </div>
             </div>
             <span class="c-side-pattern">
                 <svg height="100%" width="100%" style="float:left" class="pattern-swatch">
-                    <rect class="pattern-tile" style="fill: url(#pattern-3) #fff;" x="0" y="0" height="100%" width="100%"></rect>
+                    <rect style="fill: url(#crosshatch) #fff;" x="0" y="0" height="100%" width="100%"></rect>
                 </svg>
             </span>
         </div>

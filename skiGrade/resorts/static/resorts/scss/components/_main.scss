@@ -32,7 +32,6 @@ h2 {
 .weather-section,
 .login-section {
   @include clearfix;
-  display: block;
   background-color: rgba(darkorange, 0.2);
   height: 100vh;
 }
@@ -64,11 +63,22 @@ h2 {
 /* LOGIN SECTION START */
 .login-section {
   margin: 175px 0 50px 0;
-  background-color: pink;
+  height: auto;
 
   .wrap {
-    position: relative;
     height: 100%;
+    padding-left: 75px;
+    position: relative;
+    background-color: orangered;
+
+    @include below($breakpoint-tablet) {
+      padding-left: 25px;
+    }
   }
+
+  .signup-wrap {
+    display: inline;
+  }
+
 }
 /* LOGIN SECTION END */

@@ -2,9 +2,6 @@
 .signup-box {
   width: 69%;
   margin: 50px auto;
-  left: 0;
-  right: 0;
-  position: absolute;
   display: inline-block;
   font-family: sans-serif;
   font
@@ -29,6 +26,7 @@
   }
 
   p {
+    margin: 0;
     @include typography-header-3($line-height: 39px 27px);
   }
 
@@ -39,5 +37,22 @@
     &:hover {
       background-color: darken(#00FFCC, 5%);
     }
+  }
+
+  @include below($breakpoint-tablet) {
+    left: 20px;
+    right: auto;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
   }
 }

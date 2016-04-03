@@ -2,6 +2,12 @@
 .c-side-pattern {
   width: 50px;
   height: 100%;
+  position: absolute;
+  right: 0;
   float: right;
   background-color: $color-secondary-black;
+
+  rect {
+    fill: $color-secondary-black;
+  }
 }

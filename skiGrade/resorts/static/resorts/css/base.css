@@ -553,9 +553,6 @@ optgroup {
 .signup-box {
   width: 69%;
   margin: 50px auto;
-  left: 0;
-  right: 0;
-  position: absolute;
   display: inline-block;
   font-family: sans-serif; }
   .signup-box font
@@ -571,6 +568,7 @@ optgroup {
     .signup-box span:empty {
       background-color: red; }
   .signup-box p {
+    margin: 0;
     hyphens: auto;
     font-family: Josefin Sans, sans-serif;
     font-size: 40px;
@@ -584,6 +582,12 @@ optgroup {
     height: 50px; }
     .signup-box #submit:hover {
       background-color: #00e6b8; }
+  @media screen and (max-width: 719px) {
+    .signup-box {
+      left: 20px;
+      right: auto; }
+      .signup-box p {
+        text-align: left; } }
 
 html {
   background-image: -webkit-linear-gradient( right , #00FFCC, #267F7F);
@@ -614,7 +618,6 @@ h2 {
 .grade-section,
 .weather-section,
 .login-section {
-  display: block;
   background-color: rgba(255, 140, 0, 0.2);
   height: 100vh; }
   .grade-section::after,
@@ -645,10 +648,17 @@ h2 {
 /* LOGIN SECTION START */
 .login-section {
   margin: 175px 0 50px 0;
-  background-color: pink; }
+  height: auto; }
   .login-section .wrap {
+    height: 100%;
+    padding-left: 75px;
     position: relative;
-    height: 100%; }
+    background-color: orangered; }
+    @media screen and (max-width: 719px) {
+      .login-section .wrap {
+        padding-left: 25px; } }
+  .login-section .signup-wrap {
+    display: inline; }
 
 /* LOGIN SECTION END */
 .c-page-header {
@@ -800,5 +810,9 @@ h2 {
 .c-side-pattern {
   width: 50px;
   height: 100%;
+  position: absolute;
+  right: 0;
   float: right;
   background-color: #333; }
+  .c-side-pattern rect {
+    fill: #333; }
