@@ -53,13 +53,17 @@ h2 {
 
   @include below($breakpoint-mobile) {
     height: 140vh;
+
+    .section-grades-image {
+      height: 140vh;
+    }
   }
 }
 /* GRADE SECTION END */
 
 /* LOGIN SECTION START */
 .login-section {
-  margin-top: 175px;
+  margin: 175px 0 50px 0;
   background-color: pink;
 
   .wrap {

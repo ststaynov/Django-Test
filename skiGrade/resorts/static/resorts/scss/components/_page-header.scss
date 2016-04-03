@@ -7,74 +7,80 @@
 
   .container {
     width: 100%;
-    padding: 25px;
     position: relative;
     text-align: center;
+  }
 
-    .e-logo {
-      width: 50px;
-      display: inline-block;
-      float: left;
+  .e-logo {
+    width: 50px;
+    margin: 25px 0 0 25px;
+    display: inline-block;
+    float: left;
+  }
+
+  .e-menu-list {
+    font-size: 0;
+  }
+
+  .e-menu-title {
+    border: 1px solid $color-secondary-black;
+    color: $color-white;
+    @include prefix-icon($icon-circle-down);
+
+    &::before {
+      margin: 0 10px 0 25px;
+      font-size: 25px;
+      line-height: 40px;
     }
 
-    .e-menu-title {
-      position: relative;
-      margin: 0;
-      padding: 10px 75px;
-      border: 1px solid $color-secondary-black;
-      background-color: transparent;
-      @include typography-header-3;
-      @include prefix-icon($icon-circle-down);
-      z-index: $z-menu;
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
 
-      &::before {
-        margin-right: 15px;
-      }
 
-      &:hover {
-        color: $color-white;
-        background-color: $color-black;
-      }
+  .e-menu-item {
+    position: relative;
+    margin: 0;
+    display: none;
+    @include typography-header-3;
+    background-color: transparent;
+    cursor: hand;
+    cursor: pointer;
+    z-index: $z-menu;
 
-      &.is-active {
-        color: $color-white;
-        background-color: $color-black;
-      }
+    a,span {
+      padding: 10px 25px 10px 0;
+      text-decoration: none;
+      color: $color-white;
+
     }
 
-    .e-menu-list {
-      font-size: 0;
-    }
-
-    .e-menu-item {
-      display: none;
-      cursor: hand;
-      cursor: pointer;
-
-      a {
-        text-decoration: none;
-        color: $color-black;
-      }
-
-      &.e-menu-title {
-        display: inline-block;
-      }
-    }
-
-    .e-action-container {
+    &.e-menu-title {
       display: inline-block;
     }
 
-    .log-in {
+    &.is-active {
       display: inline-block;
+      color: $color-white;
+      background-color: $color-black;
     }
+  }
 
-    .log-out {
-      display: inline-block;
-    }
+  .e-action-container {
+    display: inline-block;
+  }
 
-    .sign-up {
-      display: inline-block;
-    }
+  .log-in {
+    display: inline-block;
+  }
+
+  .log-out {
+    display: inline-block;
+  }
+
+  .sign-up {
+    display: inline-block;
   }
 }

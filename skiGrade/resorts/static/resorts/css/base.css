@@ -546,6 +546,45 @@ optgroup {
   text-decoration: none;
   text-transform: none; }
 
+.hidden {
+  visibility: hidden;
+  height: 0; }
+
+.signup-box {
+  width: 69%;
+  margin: 50px auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  font-family: sans-serif; }
+  .signup-box font
+.signup-box-body {
+    padding: 20px; }
+  .signup-box span {
+    min-width: 25px;
+    color: #267F7F;
+    background-color: #00FFCC;
+    display: inline-block; }
+    .signup-box span:hover {
+      background-color: #00e6b8; }
+    .signup-box span:empty {
+      background-color: red; }
+  .signup-box p {
+    hyphens: auto;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 40px;
+    line-height: 39px; }
+    @media screen and (max-width: 529px) {
+      .signup-box p {
+        font-size: 26px;
+        line-height: 27px; } }
+  .signup-box #submit {
+    width: 100%;
+    height: 50px; }
+    .signup-box #submit:hover {
+      background-color: #00e6b8; }
+
 html {
   background-image: -webkit-linear-gradient( right , #00FFCC, #267F7F);
   background-image: linear-gradient(to left, #00FFCC, #267F7F); }
@@ -598,12 +637,14 @@ h2 {
     background-size: cover; }
   @media screen and (max-width: 479px) {
     .grade-section {
-      height: 140vh; } }
+      height: 140vh; }
+      .grade-section .section-grades-image {
+        height: 140vh; } }
 
 /* GRADE SECTION END */
 /* LOGIN SECTION START */
 .login-section {
-  margin-top: 175px;
+  margin: 175px 0 50px 0;
   background-color: pink; }
   .login-section .wrap {
     position: relative;
@@ -617,65 +658,69 @@ h2 {
   z-index: 50; }
   .c-page-header .container {
     width: 100%;
-    padding: 25px;
     position: relative;
     text-align: center; }
-    .c-page-header .container .e-logo {
-      width: 50px;
+  .c-page-header .e-logo {
+    width: 50px;
+    margin: 25px 0 0 25px;
+    display: inline-block;
+    float: left; }
+  .c-page-header .e-menu-list {
+    font-size: 0; }
+  .c-page-header .e-menu-title {
+    border: 1px solid #333;
+    color: #fff; }
+    .c-page-header .e-menu-title::before {
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      vertical-align: bottom;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-family: icomoon;
+      content: ""; }
+    .c-page-header .e-menu-title::before {
+      margin: 0 10px 0 25px;
+      font-size: 25px;
+      line-height: 40px; }
+    .c-page-header .e-menu-title:hover {
+      color: #fff;
+      background-color: #000; }
+  .c-page-header .e-menu-item {
+    position: relative;
+    margin: 0;
+    display: none;
+    hyphens: auto;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    background-color: transparent;
+    cursor: hand;
+    cursor: pointer;
+    z-index: 600; }
+    @media screen and (max-width: 529px) {
+      .c-page-header .e-menu-item {
+        font-size: 26px;
+        line-height: 30px; } }
+    .c-page-header .e-menu-item a, .c-page-header .e-menu-item span {
+      padding: 10px 25px 10px 0;
+      text-decoration: none;
+      color: #fff; }
+    .c-page-header .e-menu-item.e-menu-title {
+      display: inline-block; }
+    .c-page-header .e-menu-item.is-active {
       display: inline-block;
-      float: left; }
-    .c-page-header .container .e-menu-title {
-      position: relative;
-      margin: 0;
-      padding: 10px 75px;
-      border: 1px solid #333;
-      background-color: transparent;
-      hyphens: auto;
-      font-family: Josefin Sans, sans-serif;
-      font-size: 40px;
-      line-height: 44px;
-      z-index: 600; }
-      @media screen and (max-width: 529px) {
-        .c-page-header .container .e-menu-title {
-          font-size: 26px;
-          line-height: 30px; } }
-      .c-page-header .container .e-menu-title::before {
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        vertical-align: bottom;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        font-family: icomoon;
-        content: ""; }
-      .c-page-header .container .e-menu-title::before {
-        margin-right: 15px; }
-      .c-page-header .container .e-menu-title:hover {
-        color: #fff;
-        background-color: #000; }
-      .c-page-header .container .e-menu-title.is-active {
-        color: #fff;
-        background-color: #000; }
-    .c-page-header .container .e-menu-list {
-      font-size: 0; }
-    .c-page-header .container .e-menu-item {
-      display: none;
-      cursor: hand;
-      cursor: pointer; }
-      .c-page-header .container .e-menu-item a {
-        text-decoration: none;
-        color: #000; }
-      .c-page-header .container .e-menu-item.e-menu-title {
-        display: inline-block; }
-    .c-page-header .container .e-action-container {
-      display: inline-block; }
-    .c-page-header .container .log-in {
-      display: inline-block; }
-    .c-page-header .container .log-out {
-      display: inline-block; }
-    .c-page-header .container .sign-up {
-      display: inline-block; }
+      color: #fff;
+      background-color: #000; }
+  .c-page-header .e-action-container {
+    display: inline-block; }
+  .c-page-header .log-in {
+    display: inline-block; }
+  .c-page-header .log-out {
+    display: inline-block; }
+  .c-page-header .sign-up {
+    display: inline-block; }
 
 .c-close-button {
   width: 50px;

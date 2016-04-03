@@ -24,6 +24,34 @@
                     <span>close</span>
                 </a>
             </div>
+            <div class="signup-box">
+              <form class="hidden native_form">
+                  <input type="text" name="username"></input>
+                  <input type="email" name="email"></input>
+                  <input type="text" name="first_name"></input>
+                  <input type="text" name="last_name"></input>
+                  <input type="password" name="pass_original"></input>
+                  <input type="password" name="pass_check"></input>
+              </form>
+              <p class="signup-box-body">
+                I would like my username to be
+                <span id="username" contenteditable>blaketarter</span>,
+                and the email for my account to be
+                <span id="email" contenteditable>******@gmail.com</span>.
+                My first name is
+                <span id="first_name" contenteditable>Blake</span>
+                and my last name is
+                <span id="last_name" contenteditable>Tarter</span>.
+                My password should be
+                <span id="pass_original" contenteditable>********</span>,
+                but to double check that it should be
+                <span id="pass_check" contenteditable>********</span>.
+            </p>
+
+                <!--<p id="status">That info looks good!</p>-->
+
+                <button id="submit">Get Started</button>
+            </div>
             <span class="c-side-pattern">
                 <svg height="100%" width="100%" style="float:left" class="pattern-swatch">
                     <rect class="pattern-tile" style="fill: url(#pattern-3) #fff;" x="0" y="0" height="100%" width="100%"></rect>

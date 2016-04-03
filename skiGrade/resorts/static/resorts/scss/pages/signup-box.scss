@@ -1,0 +1,43 @@
+
+.signup-box {
+  width: 69%;
+  margin: 50px auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  font-family: sans-serif;
+  font
+
+  .signup-box-body {
+    padding: 20px;
+  }
+
+  span {
+    min-width: 25px;
+    color: $color-blue;
+    background-color: #00FFCC;
+    display: inline-block;
+
+    &:hover {
+      background-color: darken(#00FFCC, 5%);
+    }
+
+    &:empty {
+      background-color: red;
+    }
+  }
+
+  p {
+    @include typography-header-3($line-height: 39px 27px);
+  }
+
+  #submit {
+    width: 100%;
+    height: 50px;
+
+    &:hover {
+      background-color: darken(#00FFCC, 5%);
+    }
+  }
+}

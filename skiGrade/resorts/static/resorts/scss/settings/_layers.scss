@@ -1,4 +1,9 @@
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 //layer values
 $z-10: 10;
 $z-20: 20;
