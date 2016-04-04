@@ -4,8 +4,9 @@
   height: 50px;
   position: absolute;
   top: -35px;
-  right: 50px;
+  right: 30px;
   background-color: #267F7F;
+  z-index: $z-10;
 
   .close-item {
     @include text-to-icon($icon-cross);

@@ -23,3 +23,5 @@ $('.c-menu-overlay').on('click', function () {
     $(this).removeClass('is-active');
     $('.e-menu-item').removeClass('is-active');
 });
+
+// if span width is more than parent width, span {display:block;}
