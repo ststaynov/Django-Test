@@ -25,3 +25,17 @@ $('.c-menu-overlay').on('click', function () {
 });
 
 // if span width is more than parent width, span {display:block;}
+
+$header = $('.e-menu-title');
+
+$(window).scroll(function() {
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 20) {
+        $header.addClass('animated').removeClass('fix');
+    } else {
+        $header.removeClass('animated').addClass('fix');
+    }
+
+});

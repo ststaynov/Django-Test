@@ -9,9 +9,37 @@
 </head>
 <body>
 {#    <h1 class="c-typography-header-2">{% block title %}Welcome to my block{% endblock %}</h1>#}
-        {% block content %}
+    <header class="c-page-header">
+        <div class="c-menu-overlay">
+        </div>
 
-        {% endblock %}
+        <div class="container">
+            <img src="{% static 'resorts/images/logo.svg' %}" alt="" class="e-logo">
+            <ul class="e-menu-list">
+                <li class="e-menu-title e-menu-item">
+                    <div class="icn__wrap">
+                        <i class="icn__hamburger"></i>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="58px" height="58px" viewBox="0 0 16 16" preserveAspectRatio="none">
+                            <circle cx="8" cy="8" r="6.215" transform="rotate(90 8 8)"></circle>
+                        </svg>
+                    </div>
+                    <div class="border-bottom"></div>
+                    <span>Borovets</span>
+                </li>
+                <li class="e-menu-item"><a href="">Bansko</a></li>
+                <li class="e-menu-item"><a href="">Pamporovo</a></li>
+            </ul>
+            <ul class="e-action-container">
+                <li class="log-in"></li>
+                <li class="log-out"></li>
+                <li class="sign-up"></li>
+            </ul>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
 
 <!-- javascript -->
 <script src="{% static "resorts/js/libs/jquery-1.12.2.min.js" %}" type="text/javascript"></script>

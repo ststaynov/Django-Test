@@ -1,20 +1,9 @@
 {% extends 'resorts/base.html' %}
 
 {% load staticfiles %}
-{#{% block title %} A Resort {% endblock %}#}
+//{#{% block title %} A Resort {% endblock %}#}
 
 {% block content %}
-    <header class="c-page-header">
-        <div class="container">
-            <img src="{% static 'resorts/images/logo.svg' %}" alt="" class="e-logo">
-            <h1 class="e-header-title">A Resort</h1>
-            <ul class="e-action-container">
-                <li class="log-in"></li>
-                <li class="log-out"></li>
-                <li class="sign-up"></li>
-            </ul>
-        </div>
-    </header>
     <div id="patterns" style="height:0;">
         <svg height="10" width="10" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
@@ -53,14 +42,14 @@
                       <input type="password" name="pass_check"></input>
                   </form>
                   <p class="signup-box-body">
-                    I would like my username to be
-                    <span id="username" contenteditable>blaketarter</span>,
+                    I would like my username for skigrade to be
+                    <span id="username" contenteditable>jsnow</span>,
                     and the email for my account to be
                     <span id="email" contenteditable>******@gmail.com</span>.
                     My first name is
-                    <span id="first_name" contenteditable>Blake</span>
+                    <span id="first_name" contenteditable>John</span>
                     and my last name is
-                    <span id="last_name" contenteditable>Tarter</span>.
+                    <span id="last_name" contenteditable>Snow</span>.
                     My password should be
                     <span id="pass_original" contenteditable>********</span>,
                     but to double check that it should be
