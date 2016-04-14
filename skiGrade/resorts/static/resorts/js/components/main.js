@@ -2,6 +2,12 @@
  * Created by ststa on 3/24/2016.
  */
 
+var dataFeed;
+var refreshIntervalId;
+
+function consoleLog(l) {
+    console.log(l);
+}
 
 $('.c-grades').on('click', function () {
     $(this).css('background-color','red');
@@ -39,3 +45,49 @@ $(window).scroll(function() {
     }
 
 });
+
+// instagram
+get_instagram_feed();
+
+function get_instagram_feed() {
+$.ajax({
+  url: '/api/instagram/',
+  error: function () {
+    consoleLog('error');
+  },
+  success: function (data) {
+    if (dataFeed != data) {
+      consoleLog('update');
+      $('.c-weather').html(data);
+      clearInterval(refreshIntervalId);
+      //use_instagram_feed();
+    }
+    dataFeed = data;
+  },
+  type: 'GET'
+});
+}
+
+//function use_instagram_feed(){
+//var $divs = $('div#media');
+//var count = 1;
+//
+//$divs.eq(0).addClass('is-shown');
+//console.log('use_instagram_feed');
+//refreshIntervalId = setInterval(function() {
+//  console.log('In Interval');
+//  $divs.eq(count - 1).removeClass('is-shown');
+//  if (count == 10) {
+//    $divs.eq(9).addClass('is-shown');
+//    count = 0;
+//  }
+//  if (count == 0) {
+//    $divs.eq(9).removeClass('is-shown');
+//    $divs.eq(count).addClass('is-shown');
+//  } else {
+//    $divs.eq(count - 1).removeClass('is-shown');
+//    $divs.eq(count).addClass('is-shown');
+//  }
+//  count++;
+//}, 4000)}
+

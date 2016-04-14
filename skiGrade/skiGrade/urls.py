@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^$', 'resorts.views.index'),
     url(r'^admin/', admin.site.urls),
     url(r'^login/', 'resorts.views.login'),
+
+     ## API endpoints
+    # url(r'^api/twitter', TwitterTestView.as_view()),  # test view for oauth token shiznitz
+    url(r'^api/instagram/', TemplateView.as_view(template_name='resorts/instagram.html'), name="instagram"),  # test view for Instagram
 ]
