@@ -68,6 +68,7 @@ $.ajax({
 });
 }
 
+
 //function use_instagram_feed(){
 //var $divs = $('div#media');
 //var count = 1;
