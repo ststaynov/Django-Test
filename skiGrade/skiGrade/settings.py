@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
+#Heroku
+import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,7 +26,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c(s*p7(=bv2k9$ykl%=_v7c%*_$2%d6+%_*mr5nyd10(c8pc7-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -76,13 +78,14 @@ WSGI_APPLICATION = 'skiGrade.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# Heroku Start
+DATABASES['default'] = dj_database_url.config()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+ALLOWED_HOSTS = ['*']
+
+DEBUG = False
+# Heroku End
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -122,9 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Just for local / temporary
-CACHES = {
-	'default': {
-        	'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-	}
-}
+try:
+    from .local_settings import *
+except ImportError:
+    pass
