@@ -16,5 +16,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "skiGrade.settings")
 application = get_wsgi_application()
 
 #Heroku - 2 lines
+from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
+
+application = get_wsgi_application()
 application = DjangoWhiteNoise(application)

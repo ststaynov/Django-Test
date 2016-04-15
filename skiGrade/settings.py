@@ -27,7 +27,7 @@ SECRET_KEY = 'c(s*p7(=bv2k9$ykl%=_v7c%*_$2%d6+%_*mr5nyd10(c8pc7-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,12 +79,16 @@ WSGI_APPLICATION = 'skiGrade.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 # Heroku Start
-DATABASES['default'] = dj_database_url.config()
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 
 DEBUG = False
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # Heroku End
 
 # Password validation
