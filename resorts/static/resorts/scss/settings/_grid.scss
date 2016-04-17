@@ -76,9 +76,15 @@ $susy: (
 
 /* Blog Section */
 /* Tells Susy there's 8 columns in the blog */
-.blog {
-  @include span(10);
-  @include pre(1);
+.social-section {
+  .c-facebook {
+    @include span(15.5);;
+  }
+
+  .c-instagram {
+    @include span(7.5);
+    @include pre(1);
+}
 }
 /* Tells Susy there's 4 columns in the sidebar, and its the last item on the row. */
 //.sidebar {

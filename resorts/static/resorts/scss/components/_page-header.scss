@@ -128,10 +128,10 @@
 
   @include keyframes(fix) {
     from {
-      left: 0;
+      left: 5px;
     }
     to {
-      left: 5px;
+      left: 0;
     }
   }
 

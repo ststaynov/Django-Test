@@ -1,0 +1,17 @@
+
+
+.c-facebook {
+  @include mobile {
+    height: 75vh;
+    display: inline-block;
+    background-color: rgba(232, 189, 255, 0.7);
+    vertical-align: bottom;
+  }
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
+  }
+}

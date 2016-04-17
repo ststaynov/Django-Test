@@ -1,0 +1,17 @@
+
+
+.c-instagram {
+  @include mobile {
+    height: 75vh;
+    display: inline-block;
+    background-color: rgba(132, 189, 0, 0.7);
+    vertical-align: bottom;
+  }
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
+  }
+}

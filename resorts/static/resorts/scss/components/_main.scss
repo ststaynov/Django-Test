@@ -30,7 +30,8 @@ h2 {
 
 .grade-section,
 .weather-section,
-.login-section {
+.login-section,
+.social-section {
   @include clearfix;
   background-color: rgba(darkorange, 0.2);
   height: 100vh;
@@ -60,6 +61,12 @@ h2 {
 }
 /* GRADE SECTION END */
 
+/* SOCIAL SECTION START */
+.social-section {
+  font-size: 0;
+}
+/* SOCIAL SECTION END */
+
 /* LOGIN SECTION START */
 .login-section {
   margin: 175px 0 50px 0;
@@ -82,3 +89,4 @@ h2 {
 
 }
 /* LOGIN SECTION END */
+

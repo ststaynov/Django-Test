@@ -352,8 +352,14 @@ optgroup {
 /* Grades Section End */
 /* Blog Section */
 /* Tells Susy there's 8 columns in the blog */
-.blog {
-  width: 40.625%;
+.social-section .c-facebook {
+  width: 63.54167%;
+  float: left;
+  margin-left: 0.52083%;
+  margin-right: 0.52083%; }
+
+.social-section .c-instagram {
+  width: 30.20833%;
   float: left;
   margin-left: 0.52083%;
   margin-right: 0.52083%;
@@ -632,12 +638,14 @@ h2 {
 
 .grade-section,
 .weather-section,
-.login-section {
+.login-section,
+.social-section {
   background-color: rgba(255, 140, 0, 0.2);
   height: 100vh; }
   .grade-section::after,
   .weather-section::after,
-  .login-section::after {
+  .login-section::after,
+  .social-section::after {
     clear: both;
     content: "";
     display: table; }
@@ -660,6 +668,11 @@ h2 {
         height: 140vh; } }
 
 /* GRADE SECTION END */
+/* SOCIAL SECTION START */
+.social-section {
+  font-size: 0; }
+
+/* SOCIAL SECTION END */
 /* LOGIN SECTION START */
 .login-section {
   margin: 175px 0 50px 0;
@@ -788,21 +801,21 @@ h2 {
 
 @-webkit-keyframes fix {
   from {
-    left: 0; }
+    left: 5px; }
   to {
-    left: 5px; } }
+    left: 0; } }
 
 @-moz-keyframes fix {
   from {
-    left: 0; }
+    left: 5px; }
   to {
-    left: 5px; } }
+    left: 0; } }
 
 @keyframes fix {
   from {
-    left: 0; }
+    left: 5px; }
   to {
-    left: 5px; } }
+    left: 0; } }
   .c-page-header .border-bottom {
     height: 2px;
     margin-right: 20px;
@@ -911,14 +924,69 @@ h2 {
   .c-grades .e-grade-list {
     margin-top: 0;
     margin-bottom: 0; }
-    .c-grades .e-grade-list .e-grade-item {
-      height: 37vh;
-      padding-top: 25px;
-      background-color: rgba(255, 255, 255, 0.2);
-      text-align: center; }
-      .c-grades .e-grade-list .e-grade-item .grade-image {
-        width: 45%;
-        margin: auto; }
+  .c-grades .e-grade-item {
+    height: 37vh;
+    padding-top: 25px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; }
+    .c-grades .e-grade-item::before {
+      position: absolute;
+      width: 1px;
+      height: 65%;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      content: '';
+      background-color: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+      transition-timing-function: linear; }
+    .c-grades .e-grade-item::after {
+      position: absolute;
+      width: 1px;
+      height: 25%;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: #fff;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: linear;
+      -moz-transition-timing-function: linear;
+      transition-timing-function: linear; }
+    .c-grades .e-grade-item:hover::before {
+      position: absolute;
+      width: 1px;
+      height: 25%;
+      top: 0;
+      left: 0;
+      content: '';
+      background-color: #fff; }
+    .c-grades .e-grade-item:hover::after {
+      position: absolute;
+      width: 1px;
+      height: 65%;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: #fff; }
+  .c-grades .grade-image {
+    width: 45%;
+    margin: auto; }
   @media screen and (max-width: 479px) {
     .c-grades {
       height: 112vh; } }
@@ -926,6 +994,18 @@ h2 {
 .c-weather {
   height: 50vh;
   background-color: rgba(232, 189, 0, 0.7); }
+
+.c-facebook {
+  height: 75vh;
+  display: inline-block;
+  background-color: rgba(232, 189, 255, 0.7);
+  vertical-align: bottom; }
+
+.c-instagram {
+  height: 75vh;
+  display: inline-block;
+  background-color: rgba(132, 189, 0, 0.7);
+  vertical-align: bottom; }
 
 .c-side-pattern {
   width: 50px;

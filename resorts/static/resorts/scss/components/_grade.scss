@@ -6,23 +6,57 @@
     overflow: hidden;
 
     .e-grade-list {
-      margin-top: 0;
-      margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
 
-      .e-grade-item {
-        height: 37vh;
-        padding-top: 25px;
-        background-color: rgba(255,255,255,0.2);
-        text-align: center;
+    .e-grade-item {
+      height: 37vh;
+      padding-top: 25px;
+      position: relative;
+      background-color: rgba(255,255,255,0.2);
+      text-align: center;
+      border-top: 1px solid $color-white;
+      border-bottom: 1px solid $color-white;
 
-        .grade-image {
-          width: 45%;
-          margin: auto;
+      &::before {
+        @include outline-left();
+      }
+
+      &::after {
+        @include outline-left($height: 25%, $top: auto, $bottom: 0);
+      }
+
+      &:hover {
+        &::before {
+          position: absolute;
+          width: 1px;
+          height: 25%;
+          top: 0;
+          left: 0;
+          content: '';
+          background-color: $color-white;
         }
-        .grade-description {
 
+        &::after {
+          position: absolute;
+          width: 1px;
+          height: 65%;
+          bottom: 0;
+          left: 0;
+          content: '';
+          background-color: $color-white;
         }
       }
+    }
+
+
+    .grade-image {
+      width: 45%;
+      margin: auto;
+    }
+    .grade-description {
+
     }
   }
 

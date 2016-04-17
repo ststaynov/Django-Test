@@ -58,7 +58,7 @@ $.ajax({
   success: function (data) {
     if (dataFeed != data) {
       consoleLog('update');
-      $('.c-weather').html(data);
+      $('.c-instagram').html(data);
       clearInterval(refreshIntervalId);
       //use_instagram_feed();
     }

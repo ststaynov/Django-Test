@@ -1,0 +1,27 @@
+
+@mixin outline-left($height: 65%, $top: 0, $bottom: auto){
+  position: absolute;
+  width: 1px;
+  height: $height;
+  top: $top;
+  bottom: $bottom;
+  left: 0;
+  content: '';
+  background-color: $color-white;
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(linear);
+}
+
+@mixin outline-right(){
+  position: absolute;
+  width: 1px;
+  height: 65%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: $color-white;
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(linear);
+}
