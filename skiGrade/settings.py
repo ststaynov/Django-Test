@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'resorts',
     'django_instagram',
+    'django_facebook',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -67,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_facebook.context_processors.facebook',
             ],
         },
     },
@@ -132,6 +134,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+FACEBOOK_APP_ID = '269894133345181'
+FACEBOOK_APP_SECRET = '23dc50c0b1f0ab6848b4e768427ef395'
+
+AUTHENTICATION_BACKENDS = (
+    'django_facebook.auth_backends.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+AUTH_USER_MODEL = 'django_facebook.FacebookCustomUser'
+AUTH_PROFILE_MODULE = 'django_facebook.FacebookProfile'
 
 try:
     from .local_settings import *

@@ -25,4 +25,6 @@ urlpatterns = [
      ## API endpoints
     # url(r'^api/twitter', TwitterTestView.as_view()),  # test view for oauth token shiznitz
     url(r'^api/instagram/', TemplateView.as_view(template_name='resorts/instagram.html'), name="instagram"),  # test view for Instagram
+    url(r'^facebook/', include('django_facebook.urls')),
+    url(r'^accounts/', include('django_facebook.auth_urls')), #Don't add this line if you use django registration or userena for registration and auth.
 ]
