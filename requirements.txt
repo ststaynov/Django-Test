@@ -1,5 +1,10 @@
 dj-database-url==0.4.1
 Django==1.9.4
+
+django-facebook==6.0.3
+Pillow==3.2.0
+Unidecode==0.4.19
+
 django-instagram==0.1.1
 gunicorn==19.4.5
 httplib2==0.9.2

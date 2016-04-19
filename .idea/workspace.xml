@@ -2,65 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/images/facebook_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/images/facebook_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/images/facebook_login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/admin_actions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/auth_backends.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/auth_urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/canvas.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/connect.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/context_processors.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/decorators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/example_views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/fixtures/users.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/management/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/management/commands/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/management/commands/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/management/commands/extend_tokens.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/management/commands/retry_open_graph_shares.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/middleware.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/model_managers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/registration_backends.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/registration_views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/signals.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/south_migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/south_migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/css/facebook.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/js/facebook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/static/django_facebook/js/statictest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/_canvas_base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/_facebook_js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/canvas_redirect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/connect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/my_style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/page_tab.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/registration.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/convert_json.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/mocks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/sample_user_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/test_utils/testcases.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_facebook/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skiGrade/settings.py" afterPath="$PROJECT_DIR$/skiGrade/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skiGrade/urls.py" afterPath="$PROJECT_DIR$/skiGrade/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,16 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_grade.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_grade.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_grid.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/settings/_grid.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,11 +71,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38501742">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="req.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/req.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2665505">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -170,16 +123,6 @@
       </file>
       <file leaf-file-name="_instagram.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_instagram.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_facebook.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_facebook.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
@@ -252,6 +195,7 @@
         <option value="$PROJECT_DIR$/skiGrade/settings.py" />
         <option value="$PROJECT_DIR$/skiGrade/urls.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -503,20 +447,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resorts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skiGrade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skiGrade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_facebook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -972,7 +902,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460909800958</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="django_facebook added and working">
+      <created>1461091954535</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1461091954535</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -990,6 +926,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3895349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1000,7 +937,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1002,8 @@
     <MESSAGE value="Heroku Deployment test 6 static dirs" />
     <MESSAGE value="Heroku Deployment working static commented out" />
     <MESSAGE value="minor fixes meny &amp; social section added &amp; grade border animation added" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fixes meny &amp; social section added &amp; grade border animation added" />
+    <MESSAGE value="django_facebook added and working" />
+    <option name="LAST_COMMIT_MESSAGE" value="django_facebook added and working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1081,13 +1018,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34991422">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1282,14 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skiGrade/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.333333">
@@ -1464,8 +1386,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38501742">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2665505">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
