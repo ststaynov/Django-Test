@@ -66,8 +66,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skiGrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3764479">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33204633">
+              <caret line="92" column="16" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -967,7 +967,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461183783392</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Facebook correct acces key added test">
+      <created>1461184363376</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1461184363376</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1037,7 +1043,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="grade billboard &amp; grades // registration_overlay added" />
     <MESSAGE value="header configured // sprite added" />
     <MESSAGE value="fonts set" />
     <MESSAGE value="icons" />
@@ -1062,7 +1067,8 @@
     <MESSAGE value="pushing new requirements.txt for HEROKU" />
     <MESSAGE value="Facebook login works + django_facebook migrations added" />
     <MESSAGE value="Facebook correct acces key added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Facebook correct acces key added" />
+    <MESSAGE value="Facebook correct acces key added test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facebook correct acces key added test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1475,8 +1481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skiGrade/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3764479">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33204633">
+          <caret line="92" column="16" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="16" />
           <folding />
         </state>
       </provider>
