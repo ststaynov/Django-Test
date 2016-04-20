@@ -66,8 +66,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skiGrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6061776">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.52895755">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -991,7 +991,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461186134631</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Facebook correction database setup test">
+      <created>1461187512049</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1461187512049</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1499,8 +1505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skiGrade/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6061776">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.52895755">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="74" />
           <folding />
         </state>
       </provider>
