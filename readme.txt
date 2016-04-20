@@ -12,3 +12,5 @@ Heroku git: "https://git.heroku.com/skigrade-github-development.git"
 psycopg2==2.5.4 for use by Heroku server
 
 # pip install Pillow - for django_facebook images
+
+# before deployment: change Instagram access token

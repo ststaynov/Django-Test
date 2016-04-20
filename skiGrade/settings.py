@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c(s*p7(=bv2k9$ykl%=_v7c%*_$2%d6+%_*mr5nyd10(c8pc7-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
+DEBUG = True
 # ALLOWED_HOSTS = []
 
 
@@ -135,8 +135,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-FACEBOOK_APP_ID = '269894133345181'
-FACEBOOK_APP_SECRET = '23dc50c0b1f0ab6848b4e768427ef395'
+FACEBOOK_APP_ID = '270037106664217'
+FACEBOOK_APP_SECRET = 'ad86b36a88a76440e964f92d271c5031'
 
 AUTHENTICATION_BACKENDS = (
     'django_facebook.auth_backends.FacebookBackend',
