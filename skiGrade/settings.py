@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c(s*p7(=bv2k9$ykl%=_v7c%*_$2%d6+%_*mr5nyd10(c8pc7-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # ALLOWED_HOSTS = []
 
 
@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'skiGrade.wsgi.application'
 
 # Heroku Start
 import dj_database_url
-
-DATABASES['default'] =  dj_database_url.config()
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
