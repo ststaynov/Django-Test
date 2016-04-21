@@ -3,42 +3,42 @@ try:
 except ImportError:
     from django.conf.urls.defaults import patterns, url
 from django.conf import settings
+from django_facebook import views
+from django_facebook import example_views
 
 # help autodiscovery a bit
 from django_facebook import admin
 
-urlpatterns = patterns(
-    'django_facebook.views',
-    url(r'^connect/$', 'connect', name='facebook_connect'),
+urlpatterns = [
+    url(r'^connect/$', views.connect, name='facebook_connect'),
     url(r'^disconnect/$',
-        'disconnect', name='facebook_disconnect'),
-    url(r'^example/$', 'example', name='facebook_example'),
-)
+        views.disconnect, name='facebook_disconnect'),
+    url(r'^example/$', views.example, name='facebook_example'),
+]
 
-dev_patterns = patterns(
-    'django_facebook.example_views',
+dev_patterns = [
     url(
-        r'^lazy_decorator_example/$', 'lazy_decorator_example',
+        r'^lazy_decorator_example/$', example_views.lazy_decorator_example,
         name='facebook_lazy_decorator_example'),
-    url(r'^decorator_example/$', 'decorator_example',
+    url(r'^decorator_example/$', example_views.decorator_example,
         name='facebook_decorator_example'),
     url(
-        r'^decorator_example_scope/$', 'decorator_example_scope',
+        r'^decorator_example_scope/$', example_views.decorator_example_scope,
         name='facebook_decorator_example_scope'),
     url(r'^wall_post/$',
-        'wall_post', name='facebook_wall_post'),
+        example_views.wall_post, name='facebook_wall_post'),
     url(r'^checkins/$',
-        'checkins', name='facebook_checkins'),
+        example_views.checkins, name='facebook_checkins'),
     url(r'^image_upload/$',
-        'image_upload', name='facebook_image_upload'),
-    url(r'^canvas/$', 'canvas', name='facebook_canvas'),
+        example_views.image_upload, name='facebook_image_upload'),
+    url(r'^canvas/$', example_views.canvas, name='facebook_canvas'),
     url(r'^page_tab/$',
-        'page_tab', name='facebook_page_tab'),
-    url(r'^open_graph_beta/$', 'open_graph_beta',
+        example_views.page_tab, name='facebook_page_tab'),
+    url(r'^open_graph_beta/$', example_views.open_graph_beta,
         name='facebook_open_graph_beta'),
-    url(r'^remove_og_share/$', 'remove_og_share',
+    url(r'^remove_og_share/$', example_views.remove_og_share,
         name='facebook_remove_og_share'),
-)
+]
 
 # when developing enable the example views
 if settings.DEBUG or getattr(settings, 'TESTING', False):
