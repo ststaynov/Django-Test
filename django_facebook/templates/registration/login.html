@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,29 @@
     <title>Title</title>
 </head>
 <body>
-login
+{% block content %}
+    <form  method="POST" action="">
+
+    {% csrf_token %}
+
+
+        {% for field in form %}
+
+            <div class="fieldWrapper">
+
+                {{ field.errors }}
+
+                {{ field.label_tag }} {{ field }}
+
+            </div>
+
+        {%  endfor %}
+
+    <input type="submit" value="Login" />
+
+    <input type="hidden" name="next" value="{{ next }}" />
+
+    </form>
+{%  endblock %}
 </body>
 </html>
