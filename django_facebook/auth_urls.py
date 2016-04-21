@@ -32,7 +32,7 @@ from django.contrib.auth import views as auth_views
 from django_facebook import registration_views
 from django_facebook.utils import replication_safe
 
-urlpatterns = patterns('',
+urlpatterns = [
                        url(r'^login/$',
                            replication_safe(auth_views.login),
                            {'template_name': 'registration/login.html'},
@@ -63,4 +63,4 @@ urlpatterns = patterns('',
                        url(r'^register/$',
                            registration_views.register,
                            name='registration_register'),
-                       )
+                       ]

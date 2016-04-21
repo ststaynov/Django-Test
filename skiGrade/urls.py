@@ -16,11 +16,12 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
+from resorts import views
 
 urlpatterns = [
-    url(r'^$', 'resorts.views.index'),
+    url(r'^$', views.index),
     url(r'^admin/', admin.site.urls),
-    url(r'^login/', 'resorts.views.login'),
+    url(r'^login/', views.login),
 
      ## API endpoints
     # url(r'^api/twitter', TwitterTestView.as_view()),  # test view for oauth token shiznitz
