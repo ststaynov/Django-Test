@@ -14,3 +14,5 @@ psycopg2==2.5.4 for use by Heroku server
 # pip install Pillow - for django_facebook images
 
 # before deployment: change Instagram access token
+
+  Admin: stoyans Password: stoyansstoyans

@@ -10,6 +10,11 @@
 <body>
 {#    <h1 class="c-typography-header-2">{% block title %}Welcome to my block{% endblock %}</h1>#}
     <header class="c-page-header">
+        {% if request.user.facebookprofile %}
+            user has facebook profile
+        {% else %}
+            user has no facebook profile
+        {% endif %}
         <div class="c-menu-overlay">
         </div>
 
@@ -42,8 +47,8 @@
     {% endblock %}
 
 <!-- javascript -->
-<script src="{% static "resorts/js/libs/jquery-1.12.2.min.js" %}" type="text/javascript"></script>
-<script src="{% static "resorts/js/components/main.js" %}" type="text/javascript"></script>
+<script defer src="{% static "resorts/js/libs/jquery-1.12.2.min.js" %}" type="text/javascript"></script>
+<script defer src="{% static "resorts/js/components/main.js" %}" type="text/javascript"></script>
 
 </body>
 </html>
