@@ -14,7 +14,9 @@ $('.c-grades').on('click', function () {
 });
 
 // open menu
-$('.e-menu-title').on('click', function () {
+$header = $('.e-menu-title');
+
+$header.on('click', function () {
     if($(this).hasClass('is-active')) {
         $('.e-menu-item').removeClass('is-active');
         $('.c-menu-overlay').removeClass('is-active');
@@ -32,7 +34,6 @@ $('.c-menu-overlay').on('click', function () {
 
 // if span width is more than parent width, span {display:block;}
 
-$header = $('.e-menu-title');
 
 $(window).scroll(function() {
 
@@ -92,3 +93,14 @@ $.ajax({
 //  count++;
 //}, 4000)}
 
+
+/* Submit Registration Form Start */
+$('span[contenteditable]').keyup(function () {
+    console.log('Shit');
+    $('input#id_' + $(this).attr('id')).val($(this).text());
+}).trigger('keyup');
+
+//$('#submit').on('click tap', function (e) {
+//    e.preventDefault();
+//});
+/* Submit Registration Form End */

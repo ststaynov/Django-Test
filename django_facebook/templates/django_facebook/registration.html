@@ -1,14 +1,78 @@
-<html>
 
-{% block title %}Register for an account{% endblock %}
-{% block body %}
-<table>
-    <form method='post' action=''>{% csrf_token %}
-        {{ form }}
-        <tr><td></td><td><input type="submit" value="Send activation email" /></td>
-    </form>
-</table>
+{% extends 'resorts/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div id="patterns" style="height:0;">
+        <svg height="10" width="10" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <pattern id="circles-1" patternUnits="userSpaceOnUse" width="10" height="10">
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink"
+                           xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSJ3aGl0ZSIgLz4KICA8Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIgZmlsbD0iYmxhY2siLz4KPC9zdmc+"
+                           x="0" y="0" width="10" height="10">
+                    </image>
+                </pattern>
+            </defs>
+        </svg>
+
+        <svg height="8" width="8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="8" height="8">
+                    <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="
+                           x="0" y="0" width="8" height="8">
+                    </image>
+                </pattern>
+            </defs>
+        </svg>
+    </div>
+
+    <section class="login-section">
+        <div class="wrap">
+            <div class="c-close-button">
+                <a class="close-item" href="/">
+                    <span>close</span>
+                </a>
+            </div>
+            <div class="signup-wrap">
+                <div class="signup-box">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <div class="hidden">
+                            <input id="submit" type="submit" value="Send activation email">
+                            {{ form }}
+                        </div>
+
+                        <p class="signup-box-body">
+                            I would like my username for skigrade to be
+                            <span id="username" contenteditable>jsnow</span>,
+                            and the email for my account to be
+                            <span id="email" contenteditable>******@gmail.com</span>.
+                            My first name is
+                            <span id="first_name" contenteditable>John</span>
+                            and my last name is
+                            <span id="last_name" contenteditable>Snow</span>.
+                            My password should be
+                            <span id="password1" contenteditable>********</span>,
+                            but to double check that it should be
+                            <span id="password2" contenteditable>********</span>
+                        </p>
+
+                        <!--<p id="status">That info looks good!</p>-->
+
+                        <button id="submit">Get Started</button>
+                        <input type="hidden" name="next" value="{{ next }}"/>
+                    </form>
+                </div>
+            </div>
+            <span class="c-side-pattern">
+                <svg height="100%" width="100%" style="float:left" class="pattern-swatch">
+                    <rect style="fill: url(#crosshatch) #fff;" x="0" y="0" height="100%" width="100%"></rect>
+                </svg>
+            </span>
+        </div>
+    </section>
+    <footer class="c-page-footer">
+
+    </footer>
 {% endblock %}
-</html>
-
-
