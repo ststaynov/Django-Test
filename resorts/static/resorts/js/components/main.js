@@ -96,9 +96,14 @@ $.ajax({
 
 /* Submit Registration Form Start */
 $('span[contenteditable]').keyup(function () {
-    console.log('Shit');
     $('input#id_' + $(this).attr('id')).val($(this).text());
 }).trigger('keyup');
+
+    //TODO make a keydown function for the password
+    /* show as * if field is password */
+    if($(this).hasClass('password')) {
+        console.log('password');
+    }
 
 //$('#submit').on('click tap', function (e) {
 //    e.preventDefault();

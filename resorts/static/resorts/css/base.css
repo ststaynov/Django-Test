@@ -676,7 +676,8 @@ h2 {
 /* LOGIN SECTION START */
 .login-section {
   margin: 175px 0 50px 0;
-  height: auto; }
+  height: auto;
+  /* form input fields */ }
   .login-section .wrap {
     height: 100%;
     padding-left: 75px;
@@ -687,6 +688,32 @@ h2 {
         padding-left: 25px; } }
   .login-section .signup-wrap {
     display: inline; }
+  .login-section #username,
+  .login-section #email,
+  .login-section #first_name,
+  .login-section #last_name,
+  .login-section #password1,
+  .login-section #password2 {
+    max-height: 40px;
+    overflow: hidden; }
+  .login-section #username {
+    max-width: 110px; }
+  .login-section #email {
+    max-width: 325px; }
+  .login-section #first_name,
+  .login-section #last_name {
+    max-width: 115px; }
+  .login-section #password1,
+  .login-section #password2 {
+    max-width: 150px; }
+  @media screen and (max-width: 529px) {
+    .login-section #username,
+    .login-section #email,
+    .login-section #first_name,
+    .login-section #last_name,
+    .login-section #password1,
+    .login-section #password2 {
+      max-height: 27px; } }
 
 /* LOGIN SECTION END */
 .c-page-header {

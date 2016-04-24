@@ -21,7 +21,6 @@ from resorts import views
 urlpatterns = [
     url(r'^$', views.index),
     url(r'^admin/', admin.site.urls),
-    url(r'^login/', views.login),
 
      ## API endpoints
     # url(r'^api/twitter', TwitterTestView.as_view()),  # test view for oauth token shiznitz

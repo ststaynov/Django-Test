@@ -86,7 +86,41 @@ h2 {
   .signup-wrap {
     display: inline;
   }
+  /* form input fields */
+  #username,
+  #email,
+  #first_name,
+  #last_name,
+  #password1,
+  #password2 {
+    max-height: 40px;
+    overflow: hidden;
+  }
+  #username {
+    max-width: 110px;
+  }
+  #email {
+    max-width: 325px;
+  }
+  #first_name,
+  #last_name{
+    max-width: 115px;
+  }
+  #password1,
+  #password2 {
+    max-width: 150px;
+  }
 
+  @include below(530px) {
+    #username,
+    #email,
+    #first_name,
+    #last_name,
+    #password1,
+    #password2 {
+      max-height: 27px;
+    }
+  }
 }
 /* LOGIN SECTION END */
 
