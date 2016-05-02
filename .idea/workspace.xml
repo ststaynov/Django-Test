@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resorts/templates/resorts/login.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/templates/django_facebook/registration.html" afterPath="$PROJECT_DIR$/django_facebook/templates/django_facebook/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" afterPath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/js/components/main.js" afterPath="$PROJECT_DIR$/resorts/static/resorts/js/components/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skiGrade/urls.py" afterPath="$PROJECT_DIR$/skiGrade/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +46,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resorts/static/resorts/js/components/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5261324">
-              <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.70383275">
+              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -83,6 +80,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.730769">
               <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup-box.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.528302">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,7 +139,6 @@
         <option value="$PROJECT_DIR$/resorts/static/resorts/images/patterns/dot-pattern.svg" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_side-pattern.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_close-button.scss" />
-        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/components/header.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_colors.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/instagram.html" />
@@ -166,6 +172,7 @@
         <option value="$PROJECT_DIR$/skiGrade/urls.py" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
         <option value="$PROJECT_DIR$/django_facebook/templates/django_facebook/registration.html" />
+        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/js/components/main.js" />
       </list>
     </option>
@@ -1066,7 +1073,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461446191943</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="registration progress">
+      <created>1461531713981</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1461531713981</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1084,6 +1097,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30992368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1092,7 +1106,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1136,7 +1149,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login box positioning and responsiveness done" />
     <MESSAGE value="tweeks" />
     <MESSAGE value="header title animation" />
     <MESSAGE value="instagram working" />
@@ -1161,7 +1173,8 @@
     <MESSAGE value="added login/logout templates ^ check login added to base.html" />
     <MESSAGE value="login template working" />
     <MESSAGE value="registration works except displaying if there is a error in the given info" />
-    <option name="LAST_COMMIT_MESSAGE" value="registration works except displaying if there is a error in the given info" />
+    <MESSAGE value="registration progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1170,14 +1183,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/settings/_all.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bourbon/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09883721">
@@ -1423,7 +1428,7 @@
         <state vertical-scroll-proportion="0.81284404">
           <caret line="133" column="56" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="56" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1478,7 +1483,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="49" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="49" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1533,14 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.730769">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_facebook/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.538462">
@@ -1557,10 +1554,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.730769">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.528302">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resorts/static/resorts/js/components/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5261324">
-          <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.70383275">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>

@@ -567,9 +567,11 @@ optgroup {
   .signup-box span {
     min-width: 50px;
     padding: 0 10px;
+    margin-top: 5px;
     display: inline-block;
     color: #333;
-    background-color: #ff0; }
+    background-color: #ff0;
+    vertical-align: bottom; }
     .signup-box span:hover {
       background-color: #00e6b8; }
     .signup-box span:empty {

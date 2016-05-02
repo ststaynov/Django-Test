@@ -13,9 +13,11 @@
   span {
     min-width: 50px;
     padding: 0 10px;
+    margin-top: 5px;
     display: inline-block;
     color: $color-secondary-black;
     background-color: #ff0;
+    vertical-align: bottom;
 
     &:hover {
       background-color: darken(#00FFCC, 5%);

@@ -95,15 +95,22 @@ $.ajax({
 
 
 /* Submit Registration Form Start */
-$('span[contenteditable]').keyup(function () {
+var $contenteditable =  $('span[contenteditable]');
+
+$contenteditable.keydown(function (e) {
+    if($(this).hasClass('password') && e.keyCode != 8) { //8 is backspace:48 Left:37 Up:38 Right:39 Down:40 is delete TODO include all #'s in statement
+        hiddenWriting(this);
+        e.preventDefault();
+    }
+}).trigger('keydown');
+
+$contenteditable.keyup(function (){
+    consoleLog("eer");
     $('input#id_' + $(this).attr('id')).val($(this).text());
 }).trigger('keyup');
 
-    //TODO make a keydown function for the password
-    /* show as * if field is password */
-    if($(this).hasClass('password')) {
-        console.log('password');
-    }
+function hiddenWriting(object){
+}
 
 //$('#submit').on('click tap', function (e) {
 //    e.preventDefault();
