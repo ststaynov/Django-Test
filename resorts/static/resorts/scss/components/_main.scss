@@ -31,6 +31,7 @@ h2 {
 .grade-section,
 .weather-section,
 .login-section,
+.signup-section,
 .social-section {
   @include clearfix;
   background-color: rgba(darkorange, 0.2);
@@ -67,8 +68,8 @@ h2 {
 }
 /* SOCIAL SECTION END */
 
-/* LOGIN SECTION START */
-.login-section {
+/* SIGNUP SECTION START */
+.signup-section {
   margin: 175px 0 50px 0;
   height: auto;
 
@@ -81,6 +82,11 @@ h2 {
     @include below($breakpoint-tablet) {
       padding-left: 25px;
     }
+  }
+
+  .c-close-button {
+    top: -35px;
+    right: 30px;
   }
 
   .signup-wrap {
@@ -122,5 +128,11 @@ h2 {
     }
   }
 }
-/* LOGIN SECTION END */
+/* SIGNUP SECTION END */
 
+/* LOGIN SECTION END */
+.login-section {
+  margin: 175px 0 50px 0;
+  height: auto;
+}
+/* LOGIN SECTION END */

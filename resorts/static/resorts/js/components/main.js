@@ -58,9 +58,8 @@ $.ajax({
   },
   success: function (data) {
     if (dataFeed != data) {
-      consoleLog('update');
+      consoleLog('update Instagram');
       $('.c-instagram').html(data);
-      clearInterval(refreshIntervalId);
       //use_instagram_feed();
     }
     dataFeed = data;

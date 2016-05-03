@@ -556,6 +556,14 @@ optgroup {
   visibility: hidden;
   height: 0; }
 
+.login-box {
+  padding: 50px;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #267F7F; }
+  .login-box .e-field-wrapper {
+    background-color: #ff0; }
+
 .signup-box {
   width: 69%;
   margin: 50px auto;
@@ -641,12 +649,14 @@ h2 {
 .grade-section,
 .weather-section,
 .login-section,
+.signup-section,
 .social-section {
   background-color: rgba(255, 140, 0, 0.2);
   height: 100vh; }
   .grade-section::after,
   .weather-section::after,
   .login-section::after,
+  .signup-section::after,
   .social-section::after {
     clear: both;
     content: "";
@@ -675,47 +685,56 @@ h2 {
   font-size: 0; }
 
 /* SOCIAL SECTION END */
-/* LOGIN SECTION START */
-.login-section {
+/* SIGNUP SECTION START */
+.signup-section {
   margin: 175px 0 50px 0;
   height: auto;
   /* form input fields */ }
-  .login-section .wrap {
+  .signup-section .wrap {
     height: 100%;
     padding-left: 75px;
     position: relative;
     background-color: #333; }
     @media screen and (max-width: 719px) {
-      .login-section .wrap {
+      .signup-section .wrap {
         padding-left: 25px; } }
-  .login-section .signup-wrap {
+  .signup-section .c-close-button {
+    top: -35px;
+    right: 30px; }
+  .signup-section .signup-wrap {
     display: inline; }
-  .login-section #username,
-  .login-section #email,
-  .login-section #first_name,
-  .login-section #last_name,
-  .login-section #password1,
-  .login-section #password2 {
+  .signup-section #username,
+  .signup-section #email,
+  .signup-section #first_name,
+  .signup-section #last_name,
+  .signup-section #password1,
+  .signup-section #password2 {
     max-height: 40px;
     overflow: hidden; }
-  .login-section #username {
+  .signup-section #username {
     max-width: 110px; }
-  .login-section #email {
+  .signup-section #email {
     max-width: 325px; }
-  .login-section #first_name,
-  .login-section #last_name {
+  .signup-section #first_name,
+  .signup-section #last_name {
     max-width: 115px; }
-  .login-section #password1,
-  .login-section #password2 {
+  .signup-section #password1,
+  .signup-section #password2 {
     max-width: 150px; }
   @media screen and (max-width: 529px) {
-    .login-section #username,
-    .login-section #email,
-    .login-section #first_name,
-    .login-section #last_name,
-    .login-section #password1,
-    .login-section #password2 {
+    .signup-section #username,
+    .signup-section #email,
+    .signup-section #first_name,
+    .signup-section #last_name,
+    .signup-section #password1,
+    .signup-section #password2 {
       max-height: 27px; } }
+
+/* SIGNUP SECTION END */
+/* LOGIN SECTION END */
+.login-section {
+  margin: 175px 0 50px 0;
+  height: auto; }
 
 /* LOGIN SECTION END */
 .c-page-header {
@@ -897,8 +916,6 @@ h2 {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: -35px;
-  right: 30px;
   background-color: #267F7F;
   z-index: 10; }
   .c-close-button .close-item {
