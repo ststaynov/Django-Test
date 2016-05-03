@@ -10,10 +10,10 @@
 <body>
 {#    <h1 class="c-typography-header-2">{% block title %}Welcome to my block{% endblock %}</h1>#}
     <header class="c-page-header">
-        {% if request.user.facebookprofile %}
-            user has facebook profile
+        {% if user.is_authenticated %}
+            user is authenticated
         {% else %}
-            user has no facebook profile
+            user is not authenticated
         {% endif %}
         <div class="c-menu-overlay">
         </div>
