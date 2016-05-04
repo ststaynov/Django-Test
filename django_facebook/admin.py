@@ -5,7 +5,14 @@ from django_facebook import admin_actions
 from django_facebook import models
 from django_facebook import settings as facebook_settings
 from django_facebook.utils import get_profile
+from django.contrib import admin
+from django_facebook import models
+from django.contrib.auth.admin import UserAdmin
 
+class AccountAdmin(UserAdmin):
+    list_display = ('id', 'username', 'email', 'facebook_id')
+
+admin.site.register(models.FacebookCustomUser, AccountAdmin)
 
 class FacebookUserAdmin(admin.ModelAdmin):
     list_display = ('user_id', 'name', 'facebook_id',)
