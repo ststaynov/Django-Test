@@ -67,21 +67,23 @@ h2 {
   font-size: 0;
 }
 /* SOCIAL SECTION END */
+@mixin customwrap {
+  height: 100%;
+  padding-left: 75px;
+  position: relative;
 
+  @include below($breakpoint-tablet) {
+    padding-left: 25px;
+  }
+}
 /* SIGNUP SECTION START */
 .signup-section {
   margin: 175px 0 50px 0;
   height: auto;
 
   .wrap {
-    height: 100%;
-    padding-left: 75px;
-    position: relative;
+    @include customwrap;
     background-color: $color-secondary-black;
-
-    @include below($breakpoint-tablet) {
-      padding-left: 25px;
-    }
   }
 
   .c-close-button {
@@ -134,5 +136,9 @@ h2 {
 .login-section {
   margin: 175px 0 50px 0;
   height: auto;
+
+  .wrap {
+    @include customwrap;
+  }
 }
 /* LOGIN SECTION END */

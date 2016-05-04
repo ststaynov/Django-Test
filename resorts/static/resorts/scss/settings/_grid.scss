@@ -105,20 +105,4 @@ $susy: (
     }
   }
 }
-
-.unsocial {
-  //padding: gutter();
-  margin-top: gutter(10);
-  @include clearfix;
-
-  .unsocial__list-item {
-    @include span(4 of 12);
-    @include clearfix;
-
-    @media (max-width: $breakpoint-mobile) {
-      @include span(12);
-      margin-bottom: gutter(10);
-    }
-  }
-}
 /* Blog Section End */

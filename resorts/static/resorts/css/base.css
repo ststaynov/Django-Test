@@ -442,29 +442,6 @@ optgroup {
         margin-right: -100%;
         clear: none; } }
 
-.unsocial {
-  margin-top: 1.25%; }
-  .unsocial::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .unsocial .unsocial__list-item {
-    width: 31.25%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%; }
-    .unsocial .unsocial__list-item::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media (max-width: 480px) {
-      .unsocial .unsocial__list-item {
-        width: 48.95833%;
-        float: left;
-        margin-left: 0.52083%;
-        margin-right: 0.52083%;
-        margin-bottom: 1.25%; } }
-
 /* Blog Section End */
 @font-face {
   font-family: 'Josefin Sans', sans-serif;
@@ -557,12 +534,41 @@ optgroup {
   height: 0; }
 
 .login-box {
-  padding: 50px;
+  width: 500px;
   margin: 0 auto;
-  display: inline-block;
-  background-color: #267F7F; }
-  .login-box .e-field-wrapper {
+  position: relative;
+  background-color: #333;
+  hyphens: auto;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center; }
+  @media screen and (max-width: 529px) {
+    .login-box {
+      font-family: Josefin Sans, sans-serif;
+      font-size: 18px;
+      line-height: 25px; } }
+  .login-box .e-field-wrapper label {
+    color: #fff; }
+  .login-box .c-close-button {
+    top: -35px;
+    right: 30px; }
+    .login-box .c-close-button .close-item::before {
+      position: relative; }
+  .login-box .login-form {
+    margin: 50px 50px 50px 0;
+    display: inline-block; }
+  .login-box label, .login-box input {
+    display: block; }
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
     background-color: #ff0; }
+  .login-box .login-button {
+    width: 100%;
+    padding: 7.5px; }
+  @media screen and (max-width: 529px) {
+    .login-box {
+      width: 350px; } }
 
 .signup-box {
   width: 69%;
@@ -735,6 +741,13 @@ h2 {
 .login-section {
   margin: 175px 0 50px 0;
   height: auto; }
+  .login-section .wrap {
+    height: 100%;
+    padding-left: 75px;
+    position: relative; }
+    @media screen and (max-width: 719px) {
+      .login-section .wrap {
+        padding-left: 25px; } }
 
 /* LOGIN SECTION END */
 .c-page-header {

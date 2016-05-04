@@ -1,12 +1,57 @@
 
 .login-box {
-  padding: 50px;
+  width: 500px;
   margin: 0 auto;
-  display: inline-block;
-  background-color: $color-blue;
+  position: relative;
+  background-color: $color-secondary-black;
+  @include typography-header-4();
+  text-align: center;
 
   .e-field-wrapper {
-    background-color: #ff0;
+    label {
+      color: $color-white;
+    }
   }
 
+  .c-close-button {
+    top: -35px;
+    right: 30px;
+
+    .close-item{
+      &::before {
+        position: relative;
+      }
+    }
+  }
+
+  .login-form {
+    margin: 50px 50px 50px 0;
+    display: inline-block;
+  }
+
+  label, input {
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="password"]{
+    background-color : #ff0;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 7.5px;
+  }
+
+  @include below($breakpoint-typography) {
+    width: 350px;
+  }
+
+  @include tablet {
+    //
+  }
+
+  @include desktop {
+    //
+  }
 }
