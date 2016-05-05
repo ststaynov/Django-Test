@@ -1,3 +1,6 @@
+
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,5 +9,9 @@
 </head>
 <body>
 profile
+{# TODO find out how to get user data in here #}
+<p>First Name: {{ user.first_name }}</p>
+<p>Last Name: {{ user.last_name }}</p>
+
 </body>
 </html>
