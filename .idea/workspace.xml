@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resorts/templates/resorts/menu.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_page-header.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/auth_urls.py" afterPath="$PROJECT_DIR$/django_facebook/auth_urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/templates/registration/profile.html" afterPath="$PROJECT_DIR$/django_facebook/templates/registration/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" afterPath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/templates/resorts/base.html" afterPath="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,38 +63,48 @@
       <file leaf-file-name="_main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.807692">
-              <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
+            <state vertical-scroll-proportion="-9.307693">
+              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34124088">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="11" />
+            <state vertical-scroll-proportion="-13.145454">
+              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_page-header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_page-header.scss">
+      <file leaf-file-name="_logo.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="14" />
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.899635">
+              <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html">
+        <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -115,25 +130,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.103448">
-              <caret line="351" column="16" selection-start-line="351" selection-start-column="16" selection-end-line="351" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="SCSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -143,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resorts/static/resorts/images/patterns/dot-pattern.svg" />
-        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_side-pattern.scss" />
-        <option value="$PROJECT_DIR$/resorts/templates/resorts/components/header.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_colors.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/instagram.html" />
         <option value="$PROJECT_DIR$/skiGrade/wsgi.py" />
@@ -155,7 +157,6 @@
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_mixins.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/index.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_facebok.scss" />
-        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_facebook.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_instagram.scss" />
         <option value="$PROJECT_DIR$/skiGrade/local_settings.py" />
@@ -173,12 +174,10 @@
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/pages/signup-box.scss" />
         <option value="$PROJECT_DIR$/resorts/views.py" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/js/components/main.js" />
-        <option value="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/pages/login-box.scss" />
         <option value="$PROJECT_DIR$/django_facebook/templates/django_facebook/registration.html" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/blocks/side-patterns.html" />
         <option value="$PROJECT_DIR$/django_facebook/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_grid.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_close-button.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_breakpoints.scss" />
@@ -193,7 +192,13 @@
         <option value="$PROJECT_DIR$/django_facebook/auth_urls.py" />
         <option value="$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py" />
         <option value="$PROJECT_DIR$/django_facebook/templates/registration/profile.html" />
+        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" />
+        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss" />
+        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html" />
+        <option value="$PROJECT_DIR$/resorts/templates/resorts/menu.html" />
+        <option value="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
+        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss" />
       </list>
     </option>
   </component>
@@ -314,32 +319,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resorts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skiGrade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skiGrade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resorts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resorts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,11 +492,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\resorts\templates\resorts" />
+      <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\resorts\templates" />
       <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\django_facebook\templates\registration" />
       <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\django_facebook\templates" />
       <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade" />
-      <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\resorts\static\resorts\images" />
-      <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade\resorts\static\resorts\js\libs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ststa\Documents\GitHub\SkiGrade_Django_Development\skiGrade" />
@@ -807,12 +786,6 @@
       <option name="number" value="Default" />
       <updated>1458847283893</updated>
     </task>
-    <task id="LOCAL-00003" summary="settings settings settings">
-      <created>1459030545117</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1459030545117</updated>
-    </task>
     <task id="LOCAL-00004" summary="grade billboard &amp; grades // registration_overlay added">
       <created>1459452643077</created>
       <option name="number" value="00004" />
@@ -1101,7 +1074,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462458122308</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="profile html added and url.py configured">
+      <created>1462473204682</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1462473204682</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1171,7 +1150,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Heroku Deployment test 4 static" />
     <MESSAGE value="Heroku Deployment test 5 static root" />
     <MESSAGE value="Heroku Deployment test 6 static dirs" />
     <MESSAGE value="Heroku Deployment working static commented out" />
@@ -1196,7 +1174,8 @@
     <MESSAGE value="Users overview added to admin page" />
     <MESSAGE value="Update templates to use static macro" />
     <MESSAGE value="templates for password actions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="templates for password actions added" />
+    <MESSAGE value="profile html added and url.py configured" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile html added and url.py configured" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1205,21 +1184,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_facebook/example_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0740743">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24390244">
@@ -1532,7 +1496,7 @@
         <state vertical-scroll-proportion="-1.369338">
           <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1566,7 +1530,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1589,34 +1553,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.807692">
-          <caret line="141" column="3" selection-start-line="141" selection-start-column="3" selection-end-line="141" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html">
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_page-header.scss">
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="14" />
+        <state vertical-scroll-proportion="-9.307693">
+          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34124088">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="11" />
+        <state vertical-scroll-proportion="-13.145454">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.899635">
+          <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
           <folding />
         </state>
       </provider>

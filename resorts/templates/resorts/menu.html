@@ -1,25 +1,7 @@
+{# TODO make the menu.html be injected into base.html #}
+{% extends 'resorts/base.html' %}
 
-{% load staticfiles %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>{% block head_title %} SkiGrade {% endblock %}</title>
-     <link rel="stylesheet" type="text/css" href="{% static "resorts/css/base.css" %}"/>
-</head>
-<body>
-{#    <h1 class="c-typography-header-2">{% block title %}Welcome to my block{% endblock %}</h1>#}
-    <div class="c-logo">
-        <img src="{% static 'resorts/images/logo.svg' %}" alt="" class="e-logo">
-        {% if user.is_authenticated %}
-            user is authenticated
-        {% else %}
-            user is not authenticated
-        {% endif %}
-    </div>
-
+{% block menu %}
     <div class="c-menu">
         <div class="c-menu-overlay">
         </div>
@@ -51,15 +33,4 @@
             </ul>
         </div>
     </div>
-
-
-    {% block content %}
-
-    {% endblock %}
-
-<!-- javascript -->
-<script defer src="{% static "resorts/js/libs/jquery-1.12.2.min.js" %}" type="text/javascript"></script>
-<script defer src="{% static "resorts/js/components/main.js" %}" type="text/javascript"></script>
-
-</body>
-</html>
+{% endblock %}

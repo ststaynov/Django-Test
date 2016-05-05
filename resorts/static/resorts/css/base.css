@@ -678,7 +678,8 @@ h2 {
     position: absolute;
     top: 0;
     background-image: url(/static/resorts/images/bg.jpg);
-    background-size: cover; }
+    background-size: cover;
+    z-index: -1; }
   @media screen and (max-width: 479px) {
     .grade-section {
       height: 140vh; }
@@ -750,34 +751,35 @@ h2 {
         padding-left: 25px; } }
 
 /* LOGIN SECTION END */
-.c-page-header {
-  width: 100%;
+.c-menu {
+  width: 250px;
   position: fixed;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  top: 25px;
+  right: 0;
   z-index: 50; }
-  .c-page-header .container {
+  .c-menu .container {
     width: 100%;
     position: relative;
     text-align: center; }
-  .c-page-header .e-logo {
+  .c-menu .c-logo {
     width: 50px;
     margin: 25px 0 0 25px;
     display: inline-block;
     float: left; }
-  .c-page-header .e-menu-list {
+  .c-menu .e-menu-list {
+    background-color: rgba(0, 0, 0, 0.4);
     font-size: 0; }
-  .c-page-header .e-menu-title {
+  .c-menu .e-menu-title {
     color: #fff;
     hyphens: auto;
     font-family: Josefin Sans, sans-serif;
     font-size: 50px;
     line-height: 52px; }
     @media screen and (max-width: 529px) {
-      .c-page-header .e-menu-title {
+      .c-menu .e-menu-title {
         font-size: 32px;
         line-height: 36px; } }
-    .c-page-header .e-menu-title span:hover {
+    .c-menu .e-menu-title span:hover {
       -webkit-animation: colorChange 0.5s ease-out;
       -moz-animation: colorChange 0.5s ease-out;
       animation: colorChange 0.5s ease-out;
@@ -802,9 +804,9 @@ h2 {
     color: #fff; }
   to {
     color: #333; } }
-  .c-page-header i {
+  .c-menu i {
     display: block; }
-  .c-page-header .icn__wrap {
+  .c-menu .icn__wrap {
     width: 58px;
     height: 58px;
     position: relative;
@@ -812,7 +814,7 @@ h2 {
     display: inline-block;
     float: left;
     cursor: pointer; }
-  .c-page-header .icn__hamburger {
+  .c-menu .icn__hamburger {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -824,7 +826,7 @@ h2 {
     height: 1px;
     z-index: 999;
     background: #fff; }
-    .c-page-header .icn__hamburger::before, .c-page-header .icn__hamburger::after {
+    .c-menu .icn__hamburger::before, .c-menu .icn__hamburger::after {
       content: "";
       float: left;
       display: block;
@@ -832,9 +834,9 @@ h2 {
       height: 1px;
       background: #fff;
       margin: 5px 0 0; }
-    .c-page-header .icn__hamburger::before {
+    .c-menu .icn__hamburger::before {
       margin: 6px 0 0 0; }
-  .c-page-header svg circle {
+  .c-menu svg circle {
     fill: none;
     stroke: #fff;
     stroke-width: .5;
@@ -844,14 +846,14 @@ h2 {
     stroke-dashoffset: 39;
     -webkit-transition: stroke-dashoffset 0.5s;
     transition: stroke-dashoffset 0.5s; }
-  .c-page-header .e-menu-title.animated .border-bottom {
+  .c-menu .e-menu-title.animated .border-bottom {
     right: 100%;
     left: 4px; }
-  .c-page-header .e-menu-title.animated svg circle {
+  .c-menu .e-menu-title.animated svg circle {
     stroke-dashoffset: 0;
     -webkit-transition: stroke-dashoffset 0.5s;
     transition: stroke-dashoffset 0.5s; }
-  .c-page-header .e-menu-title.fix .border-bottom {
+  .c-menu .e-menu-title.fix .border-bottom {
     -webkit-animation: fix 0.5s linear;
     animation: fix 0.5s linear;
     -webkit-animation-delay: 0.5s;
@@ -877,7 +879,7 @@ h2 {
     left: 5px; }
   to {
     left: 0; } }
-  .c-page-header .border-bottom {
+  .c-menu .border-bottom {
     height: 2px;
     margin-right: 20px;
     position: absolute;
@@ -887,7 +889,7 @@ h2 {
     background: #fff;
     -webkit-transition: right 0.5s;
     transition: right 0.5s; }
-  .c-page-header .e-menu-item {
+  .c-menu .e-menu-item {
     position: relative;
     margin: 0;
     display: none;
@@ -900,30 +902,40 @@ h2 {
     cursor: pointer;
     z-index: 600; }
     @media screen and (max-width: 529px) {
-      .c-page-header .e-menu-item {
+      .c-menu .e-menu-item {
         font-size: 26px;
         line-height: 30px; } }
-    .c-page-header .e-menu-item a, .c-page-header .e-menu-item span {
+    .c-menu .e-menu-item a, .c-menu .e-menu-item span {
       padding: 10px 25px 10px 0;
       text-decoration: none;
       color: #fff; }
-    .c-page-header .e-menu-item span {
+    .c-menu .e-menu-item span {
       vertical-align: bottom;
       line-height: 24px; }
-    .c-page-header .e-menu-item.e-menu-title {
+    .c-menu .e-menu-item.e-menu-title {
       display: inline-block; }
-    .c-page-header .e-menu-item.is-active {
+    .c-menu .e-menu-item.is-active {
       display: inline-block;
       color: #fff;
       background-color: #000; }
-  .c-page-header .e-action-container {
+  .c-menu .e-action-container {
+    margin: 0;
+    padding: 20px 0;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.4); }
+  .c-menu .log-in {
     display: inline-block; }
-  .c-page-header .log-in {
+  .c-menu .log-out {
     display: inline-block; }
-  .c-page-header .log-out {
+  .c-menu .sign-up {
     display: inline-block; }
-  .c-page-header .sign-up {
-    display: inline-block; }
+
+.c-logo {
+  display: inline-block;
+  position: absolute; }
+  .c-logo .e-logo {
+    width: 50px;
+    margin: 25px 0 0 25px; }
 
 .c-close-button {
   width: 50px;

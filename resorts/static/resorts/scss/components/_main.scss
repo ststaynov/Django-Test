@@ -50,6 +50,7 @@ h2 {
     top: 0  ;
     background-image: url(/static/resorts/images/bg.jpg);
     background-size: cover;
+    z-index: -1; // keep background at the backmost of the page
   }
 
   @include below($breakpoint-mobile) {
