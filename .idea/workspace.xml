@@ -87,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7084048">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="50" />
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="48" />
               <folding>
                 <element signature="e#904#955#0" expanded="true" />
               </folding>
@@ -806,12 +806,6 @@
       <option name="number" value="Default" />
       <updated>1458847283893</updated>
     </task>
-    <task id="LOCAL-00006" summary="fonts set">
-      <created>1459544537186</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1459544537186</updated>
-    </task>
     <task id="LOCAL-00007" summary="icons">
       <created>1459592022916</created>
       <option name="number" value="00007" />
@@ -1100,7 +1094,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462476840367</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="heroku AttributeError fix attempt #2">
+      <created>1462478256790</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1462478256791</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1170,7 +1170,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Heroku Deployment working static commented out" />
     <MESSAGE value="minor fixes meny &amp; social section added &amp; grade border animation added" />
     <MESSAGE value="django_facebook added and working" />
     <MESSAGE value="pushing new requirements.txt for HEROKU" />
@@ -1195,7 +1194,8 @@
     <MESSAGE value="profile html added and url.py configured" />
     <MESSAGE value="menu ^ logo in progress" />
     <MESSAGE value="heroku AttributeError fix #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku AttributeError fix #1" />
+    <MESSAGE value="heroku AttributeError fix attempt #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku AttributeError fix attempt #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1616,7 +1616,7 @@
     <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7084048">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="50" />
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="48" />
           <folding>
             <element signature="e#904#955#0" expanded="true" />
           </folding>

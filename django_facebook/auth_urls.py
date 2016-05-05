@@ -63,7 +63,7 @@ urlpatterns = [
                        url(r'^register/$',
                            registration_views.register,
                            name='registration_register'),
-                       # url(r'^profile/$',
-                       #     auth_views.profile_details,
-                       #     name='auth_profile'),
+                       url(r'^profile/$',
+                           auth_views.profile_details,
+                           name='auth_profile'),
                        ]
