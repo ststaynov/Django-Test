@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resorts/templates/resorts/menu.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resorts/templates/resorts/blocks/menu.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_page-header.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" afterPath="$PROJECT_DIR$/resorts/static/resorts/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" afterPath="$PROJECT_DIR$/resorts/static/resorts/scss/components/_main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resorts/templates/resorts/base.html" afterPath="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,16 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_facebook/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_facebook/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,12 +72,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.899635">
+            <state vertical-scroll-proportion="-18.961538">
               <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+              <folding>
+                <element signature="e#904#955#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,6 +119,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.8461537">
               <caret line="12" column="32" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.79268295">
+              <caret line="352" column="3" selection-start-line="352" selection-start-column="3" selection-end-line="352" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -189,8 +193,6 @@
         <option value="$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html" />
         <option value="$PROJECT_DIR$/django_facebook/templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/django_facebook/templates/registration/password_reset_email.html" />
-        <option value="$PROJECT_DIR$/django_facebook/auth_urls.py" />
-        <option value="$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py" />
         <option value="$PROJECT_DIR$/django_facebook/templates/registration/profile.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_all.scss" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_logo.scss" />
@@ -199,6 +201,8 @@
         <option value="$PROJECT_DIR$/resorts/templates/resorts/menu.html" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/django_facebook/auth_urls.py" />
+        <option value="$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py" />
       </list>
     </option>
   </component>
@@ -457,6 +461,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resorts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skiGrade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skiGrade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_facebook" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,12 +804,6 @@
       <option name="number" value="Default" />
       <updated>1458847283893</updated>
     </task>
-    <task id="LOCAL-00004" summary="grade billboard &amp; grades // registration_overlay added">
-      <created>1459452643077</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1459452643077</updated>
-    </task>
     <task id="LOCAL-00005" summary="header configured // sprite added">
       <created>1459454389483</created>
       <option name="number" value="00005" />
@@ -1080,7 +1092,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462473204682</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="menu ^ logo in progress">
+      <created>1462476211506</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1462476211506</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1150,7 +1168,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Heroku Deployment test 5 static root" />
     <MESSAGE value="Heroku Deployment test 6 static dirs" />
     <MESSAGE value="Heroku Deployment working static commented out" />
     <MESSAGE value="minor fixes meny &amp; social section added &amp; grade border animation added" />
@@ -1175,7 +1192,8 @@
     <MESSAGE value="Update templates to use static macro" />
     <MESSAGE value="templates for password actions added" />
     <MESSAGE value="profile html added and url.py configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile html added and url.py configured" />
+    <MESSAGE value="menu ^ logo in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu ^ logo in progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1475,14 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_facebook/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1501,26 +1511,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.103448">
-          <caret line="351" column="16" selection-start-line="351" selection-start-column="16" selection-end-line="351" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_facebook/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-115.23077">
-          <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1595,8 +1589,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.899635">
+        <state vertical-scroll-proportion="-18.961538">
           <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-115.23077">
+          <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+          <folding>
+            <element signature="e#904#955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79268295">
+          <caret line="352" column="3" selection-start-line="352" selection-start-column="3" selection-end-line="352" selection-end-column="3" />
           <folding />
         </state>
       </provider>
