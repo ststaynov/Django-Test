@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django_facebook.utils import get_registration_backend
 from django_facebook.connect import CONNECT_ACTIONS
-
+from django.template.response import TemplateResponse
+from django.contrib.auth.decorators import login_required
 
 def register(request):
     """
@@ -28,3 +29,14 @@ def register(request):
     response = render(request, template_name, context)
 
     return response
+
+# Custom Profile View TODO find how to pass the User object
+@login_required
+def profile_details(request,
+                         template_name='registration/profile.html',
+                         extra_context=None):
+    context = {}
+    if extra_context is not None:
+        context.update(extra_context)
+
+    return TemplateResponse(request, template_name, context)

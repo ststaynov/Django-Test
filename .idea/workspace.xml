@@ -4,6 +4,7 @@
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/auth_urls.py" afterPath="$PROJECT_DIR$/django_facebook/auth_urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/registration_views.py" afterPath="$PROJECT_DIR$/django_facebook/registration_views.py" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth_urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auth_urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7545126">
-              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+            <state vertical-scroll-proportion="-10.896552">
+              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
               <folding>
                 <element signature="e#904#955#0" expanded="true" />
               </folding>
@@ -99,37 +100,19 @@
         <entry file="file://$PROJECT_DIR$/django_facebook/registration_views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resorts/templates/resorts/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.65008575">
+              <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -153,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_colors.scss" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/instagram.html" />
         <option value="$PROJECT_DIR$/skiGrade/wsgi.py" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/settings/_all.scss" />
@@ -202,6 +184,7 @@
         <option value="$PROJECT_DIR$/resorts/templates/resorts/menu.html" />
         <option value="$PROJECT_DIR$/resorts/templates/resorts/base.html" />
         <option value="$PROJECT_DIR$/resorts/static/resorts/scss/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/django_facebook/registration_views.py" />
         <option value="$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py" />
         <option value="$PROJECT_DIR$/django_facebook/auth_urls.py" />
       </list>
@@ -806,12 +789,6 @@
       <option name="number" value="Default" />
       <updated>1458847283893</updated>
     </task>
-    <task id="LOCAL-00011" summary="login box progress">
-      <created>1459705915886</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1459705915887</updated>
-    </task>
     <task id="LOCAL-00012" summary="login box positioning and responsiveness done">
       <created>1459714031183</created>
       <option name="number" value="00012" />
@@ -1100,7 +1077,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462567281936</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="heroku profilePage Error fix Attempt #1">
+      <created>1462567469301</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1462567469301</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1170,7 +1153,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Facebook login works + django_facebook migrations added" />
     <MESSAGE value="Facebook correct acces key added" />
     <MESSAGE value="Facebook correct acces key added test" />
     <MESSAGE value="Facebook correction database setup" />
@@ -1195,7 +1177,8 @@
     <MESSAGE value="heroku AttributeError fix attempt #3" />
     <MESSAGE value="heroku AttributeError fix attempt #4" />
     <MESSAGE value="heroku AttributeError fix #5 FIXED!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku AttributeError fix #5 FIXED!!!!" />
+    <MESSAGE value="heroku profilePage Error fix Attempt #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku profilePage Error fix Attempt #1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1229,6 +1212,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#641#682#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,6 +1229,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,6 +1448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1468,6 +1456,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,14 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/conf/urls/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2161235">
@@ -1550,29 +1533,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_facebook/registration_views.py">
+    <entry file="file://$PROJECT_DIR$/django_facebook/templates/django_facebook/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+        <state vertical-scroll-proportion="-14.884615">
+          <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7545126">
-          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        <state vertical-scroll-proportion="-10.896552">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
           <folding>
             <element signature="e#904#955#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_facebook/registration_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../skigrade_env/Lib/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65008575">
+          <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

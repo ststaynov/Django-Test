@@ -64,6 +64,6 @@ urlpatterns = [
                            registration_views.register,
                            name='registration_register'),
                        url(r'^profile/$',
-                           auth_views.profile_details,
+                           registration_views.profile_details,
                            name='profile'),
                        ]
