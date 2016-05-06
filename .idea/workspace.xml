@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ca7afb7-28e6-455a-ab46-419f187c272f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_facebook/auth_urls.py" afterPath="$PROJECT_DIR$/django_facebook/auth_urls.py" />
     </list>
     <ignored path="skiGrade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +86,8 @@
       <file leaf-file-name="auth_urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5306859">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.7545126">
+              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
               <folding>
                 <element signature="e#904#955#0" expanded="true" />
               </folding>
@@ -805,12 +806,6 @@
       <option name="number" value="Default" />
       <updated>1458847283893</updated>
     </task>
-    <task id="LOCAL-00010" summary="close button ^ overlay ^ side-pattern = added">
-      <created>1459629614783</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1459629614783</updated>
-    </task>
     <task id="LOCAL-00011" summary="login box progress">
       <created>1459705915886</created>
       <option name="number" value="00011" />
@@ -1099,7 +1094,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462566743122</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="heroku AttributeError fix #5 FIXED!!!!">
+      <created>1462567281936</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1462567281936</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1169,7 +1170,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pushing new requirements.txt for HEROKU" />
     <MESSAGE value="Facebook login works + django_facebook migrations added" />
     <MESSAGE value="Facebook correct acces key added" />
     <MESSAGE value="Facebook correct acces key added test" />
@@ -1194,7 +1194,8 @@
     <MESSAGE value="heroku AttributeError fix attempt #2" />
     <MESSAGE value="heroku AttributeError fix attempt #3" />
     <MESSAGE value="heroku AttributeError fix attempt #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="heroku AttributeError fix attempt #4" />
+    <MESSAGE value="heroku AttributeError fix #5 FIXED!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku AttributeError fix #5 FIXED!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1567,8 +1568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_facebook/auth_urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5306859">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.7545126">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding>
             <element signature="e#904#955#0" expanded="true" />
           </folding>
