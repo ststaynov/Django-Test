@@ -27,4 +27,6 @@ urlpatterns = [
     url(r'^api/instagram/', TemplateView.as_view(template_name='resorts/instagram.html'), name="instagram"),  # test view for Instagram
     url(r'^facebook/', include('django_facebook.urls')),
     url(r'^accounts/', include('django_facebook.auth_urls')), #Don't add this line if you use django registration or userena for registration and auth.
+    url(r'^blog/view/(?P<slug>[^\.]+).html', 'blog.views.view_post', name='view_blog_post'),
+    url(r'^blog/category/(?P<slug>[^\.]+).html', 'blog.views.view_category', name='view_blog_category'),
 ]

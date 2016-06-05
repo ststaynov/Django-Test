@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'resorts',
     'django_instagram',
     'django_facebook',
+    'blog',
 ]
 
 MIDDLEWARE_CLASSES = [

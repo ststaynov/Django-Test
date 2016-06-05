@@ -1070,7 +1070,8 @@ h2 {
   height: 75vh;
   display: inline-block;
   background-color: rgba(232, 189, 255, 0.7);
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  font-size: initial; }
 
 .c-instagram {
   height: 75vh;
