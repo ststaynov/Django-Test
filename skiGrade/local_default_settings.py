@@ -15,7 +15,6 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '',
-        # 'STORAGE_ENGINE': 'MyISAM',
     }
 }
 
